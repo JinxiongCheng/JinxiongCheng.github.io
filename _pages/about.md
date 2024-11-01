@@ -17,8 +17,8 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am currently a Ph.D. student in the [Department of Bioengineering](https://engineering.pitt.edu/departments/bioengineering/) of [University of Pittsburgh](https://www.pitt.edu/),  and a member of [Chen Lab](https://www.ycchenlab.org/) under the supervision of [Prof. Yu-Chih Chen](https://www.engineering.pitt.edu/people/faculty/yu-chih-chen/) at [Hillman Cancer Center](https://hillman.upmc.com/).
-In terms of my undergraduate study, I was at [Department of Biomedical Engineering](https://bme.sustech.edu.cn/en/) , [Southern University of Science and Technology](https://www.sustech.edu.cn/) (南方科技大学生物医学工程系), advised by [Prof. Xingyu Jiang (蒋兴宇)](https://www.sustech.edu.cn/en/faculties/jiangxingyu.html).
+I am currently a Ph.D. student in the [Department of Bioengineering](https://engineering.pitt.edu/departments/bioengineering/) of the [University of Pittsburgh](https://www.pitt.edu/),  and a member of [Chen Lab](https://www.ycchenlab.org/) under the supervision of [Prof. Yu-Chih Chen](https://www.engineering.pitt.edu/people/faculty/yu-chih-chen/) at [Hillman Cancer Center](https://hillman.upmc.com/).
+In terms of my undergraduate study, I was at the [Department of Biomedical Engineering](https://bme.sustech.edu.cn/en/) , [Southern University of Science and Technology](https://www.sustech.edu.cn/) (南方科技大学生物医学工程系), advised by [Prof. Xingyu Jiang (蒋兴宇)](https://www.sustech.edu.cn/en/faculties/jiangxingyu.html).
 
 During my senior year, I joined [Prof. Aaron Wheeler](https://bme.utoronto.ca/faculty-research/core-faculty/aaron-wheeler/)’s Lab at the [University of Toronto](https://www.utoronto.ca/), Canada and finished my undergraduate thesis about [digital microfluidics](https://microfluidics.utoronto.ca/). 
 
