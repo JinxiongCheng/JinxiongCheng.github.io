@@ -76,12 +76,12 @@ Xiaoyan Liu, Yingcan Zhao, Jiabin Dou, Qinghong Hou, **Jinxiong Cheng**, Xingyu 
 - *2022.10* Special Funds for the Cultivation of Guangdong College Students’ Scientific and Technological Innovation (‘Climbing Program’)
 - *2022.09* Second-class Outstanding Students Scholarship
 - *2021.09* First-class Outstanding Students Scholarship (Top 5%)
-- *2021.05* Undergraduate Innovation and Entrepreneurship Training Programs (Group leader)
+- *2021.05* Undergraduate Innovation and Entrepreneurship Training Programs
 - *2020.09* Second-class Outstanding Students Scholarship
 
 # 📖 Educations
 - *2023.09 - present*, Doctor of Philosophy, Bioengineering, University of Pittsburgh, Pittsburgh, United States.
-- *2019.06 - 2023.06*, Undergraduate, Southern Univeristy of Science and Technology, Shenzhen, China. 
+- *2019.09 - 2023.06*, Undergraduate, Southern Univeristy of Science and Technology, Shenzhen, China. 
 - *2016.09 - 2019.06*, Hefei No.8 High School, Hefei, China. 
 
 
