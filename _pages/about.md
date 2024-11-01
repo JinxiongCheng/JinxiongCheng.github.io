@@ -17,26 +17,33 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am currently a PhD  student in the Department of Bioengineering of [University of Pittsburgh](https://www.pitt.edu/), [Hillman Cancer Center](https://hillman.upmc.com/), and a member of [Chen Lab]((https://www.ycchenlab.org/)) under the supervision of [Prof. Yu-Chih Chen](https://www.engineering.pitt.edu/people/faculty/yu-chih-chen/). If you are interested, here is my [CV](https://Yonghao-Tan.github.io/files/).
-In terms of my undergraduate study, I was at [Department of Biomedical Engineering](https://bme.sustech.edu.cn/en/) , [Southern University of Science and Technology](https://www.sustech.edu.cn/) (南方科技大学生物医学工程系), advised by [Xingyu Jiang (蒋兴宇)](https://www.sustech.edu.cn/en/faculties/jiangxingyu.html).
+I am currently a Ph.D. student in the [Department of Bioengineering](https://engineering.pitt.edu/departments/bioengineering/) of [University of Pittsburgh](https://www.pitt.edu/),  and a member of [Chen Lab](https://www.ycchenlab.org/) under the supervision of [Prof. Yu-Chih Chen](https://www.engineering.pitt.edu/people/faculty/yu-chih-chen/) at [Hillman Cancer Center](https://hillman.upmc.com/).
+In terms of my undergraduate study, I was at [Department of Biomedical Engineering](https://bme.sustech.edu.cn/en/) , [Southern University of Science and Technology](https://www.sustech.edu.cn/) (南方科技大学生物医学工程系), advised by [Prof. Xingyu Jiang (蒋兴宇)](https://www.sustech.edu.cn/en/faculties/jiangxingyu.html).
 
+During my senior year, I joined [Prof. Aaron Wheeler](https://bme.utoronto.ca/faculty-research/core-faculty/aaron-wheeler/)’s Lab at the [University of Toronto](https://www.utoronto.ca/), Canada and finished my undergraduate thesis about [digital microfluidics](https://microfluidics.utoronto.ca/). 
 
 My research interest includes Microfluidics, Cancer Reaserch and Nano-scale Technology.
 
 
-# 🔥 News
-- *2023.06*: &nbsp;🎉🎉 . 
-
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Biomedical Analysis</a></div><img src='images/Biomedical Analysis.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [The nature of PDMS affects the results of the immunoassays carried out in microfluidic channels](https://www.sciencedirect.com/science/article/pii/S2950435X24000027)
 
 Chengyu Liu, **Jinxiong Cheng**, Yan Liu, Lei Mou, Yong Xia, Pengfei Wang, Xingyu Jiang
 
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Nano letters</a></div><img src='images/Nano Letters.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Bioeffects of inhaled nanoplastics on neurons and alteration of animal behaviors through deposition in the brain](https://pubs.acs.org/doi/abs/10.1021/acs.nanolett.1c04184)
+
+Xiaoyan Liu, Yingcan Zhao, Jiabin Dou, Qinghong Hou, **Jinxiong Cheng**, Xingyu Jiang
 
 </div>
 </div>
