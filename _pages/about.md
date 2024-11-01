@@ -28,22 +28,44 @@ My research interest includes Microfluidics, Cancer Reaserch and Nano-scale Tech
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Biomedical Analysis</a></div><img src='images/Biomedical Analysis.png' alt="sym" width="100%"></div></div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Biosensors 2024</div><img src='images/Biosensors.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Tumor Microenvironment Based on Extracellular Matrix Hydrogels for On-Chip Drug Screening](https://www.mdpi.com/2079-6374/14/9/429)
+
+Xiaoyan Liu, **Jinxiong Cheng**, Yingcan Zhao
+
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACS nano 2024</div><img src='images/ACS Nano.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Coupling Nanoscale Precision with Multiscale Imaging: A Multifunctional Near-Infrared Dye for the Brain](https://pubs.acs.org/doi/abs/10.1021/acsnano.4c06103)
+
+Xiaoyan Liu, Yao Chen, Chen Hang, **Jinxiong Cheng**, Dinglu Peng, Ying Li, Xingyu Jiang*
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Biomedical Analysis 2024</div><img src='images/Biomedical Analysis.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [The nature of PDMS affects the results of the immunoassays carried out in microfluidic channels](https://www.sciencedirect.com/science/article/pii/S2950435X24000027)
 
-Chengyu Liu, **Jinxiong Cheng**, Yan Liu, Lei Mou, Yong Xia, Pengfei Wang, Xingyu Jiang
+Chengyu Liu, **Jinxiong Cheng**, Yan Liu, Lei Mou, Yong Xia, Pengfei Wang, Xingyu Jiang*
 
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Nano letters</a></div><img src='images/Nano Letters.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Nano Letters 2022</div><img src='images/Nano Letters.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Bioeffects of inhaled nanoplastics on neurons and alteration of animal behaviors through deposition in the brain](https://pubs.acs.org/doi/abs/10.1021/acs.nanolett.1c04184)
 
-Xiaoyan Liu, Yingcan Zhao, Jiabin Dou, Qinghong Hou, **Jinxiong Cheng**, Xingyu Jiang
+Xiaoyan Liu, Yingcan Zhao, Jiabin Dou, Qinghong Hou, **Jinxiong Cheng**, Xingyu Jiang*
 
 </div>
 </div>
