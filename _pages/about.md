@@ -30,7 +30,7 @@ My research interest includes Microfluidics, Cancer Reaserch and Nano-scale Tech
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [The nature of PDMS affects the results of the immunoassays carried out in microfluidic channels](https://www.sciencedirect.com/science/article/pii/S2950435X24000027)
