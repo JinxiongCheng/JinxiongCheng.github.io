@@ -29,6 +29,17 @@ My research interest includes Microfluidics, Cancer Reaserch and Nano-scale Tech
 # 📝 Publications 
 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Analytical Chemistry 2025</div><img src='images/AC.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[High-Throughput Empirical and Virtual Screening To Discover Novel Inhibitors of Polyploid Giant Cancer Cells in Breast Cancer](https://pubs.acs.org/doi/full/10.1021/acs.analchem.4c05138)
+
+Yushu Ma, Chien-Hung Shih, **Jinxiong Cheng**, Hsiao-Chun Chen, Li-Ju Wang, Yanhao Tan, Yuan Zhang, Daniel D Brown, Steffi Oesterreich, Adrian V Lee, Yu-Chiao Chiu, Yu-Chih Chen
+
+</div>
+</div>
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Biosensors 2024</div><img src='images/Biosensors.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
