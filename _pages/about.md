@@ -34,7 +34,7 @@ My research interest includes Microfluidics, Cancer Reaserch and Nano-scale Tech
 
 [High-Throughput Empirical and Virtual Screening To Discover Novel Inhibitors of Polyploid Giant Cancer Cells in Breast Cancer](https://pubs.acs.org/doi/full/10.1021/acs.analchem.4c05138)
 
-Yushu Ma, Chien-Hung Shih, **Jinxiong Cheng**, Hsiao-Chun Chen, Li-Ju Wang, Yanhao Tan, Yuan Zhang, Daniel D Brown, Steffi Oesterreich, Adrian V Lee, Yu-Chiao Chiu, Yu-Chih Chen
+Yushu Ma, Chien-Hung Shih, **Jinxiong Cheng**, Hsiao-Chun Chen, Li-Ju Wang, Yanhao Tan, Yuan Zhang, Daniel D Brown, Steffi Oesterreich, Adrian V Lee, Yu-Chiao Chiu, Yu-Chih Chen*
 
 </div>
 </div>
@@ -80,6 +80,12 @@ Xiaoyan Liu, Yingcan Zhao, Jiabin Dou, Qinghong Hou, **Jinxiong Cheng**, Xingyu 
 
 </div>
 </div>
+
+# 🔥 News
+- *2025.07*: &nbsp;🎉🎉 My first paper has been accepted for publication in **Cell Reports Method**!
+- *2025.06*: &nbsp;I passed the preliminary exam and advanced to PhD candidacy!
+- *2023.09*: &nbsp;I started my PhD journey in the Chen Lab at the University of Pittsburgh!
+- *2022.09*: &nbsp;I joined the Wheeler Lab at the University of Toronto as a visiting undergraduate researcher. 
 
 
 # 🎖 Honors and Awards
