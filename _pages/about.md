@@ -27,7 +27,6 @@ My research interest includes microfluidics, nanotechnology, single-cell analysi
 # 🔥 News
 - *2025.07*: &nbsp;🎉🎉My first paper has been accepted  in **Cell Reports Methods**!
 - *2025.06*: &nbsp;🎉🎉I passed the preliminary exam and advanced to PhD candidacy!
-- *2024.12*: &nbsp;🎉🎉I reached 100 citations on Google Scholar.
 - *2023.09*: &nbsp; I started my PhD journey in the Chen Lab at the University of Pittsburgh!
 - *2023.04*: &nbsp; I was admitted to PhD programs at UofT, Pitt, NYU, and UMN; MS programs at UCLA, BU, Cornell and CMU.
 - *2022.09*: &nbsp; I joined the Wheeler Lab at the University of Toronto as a visiting undergraduate researcher.
