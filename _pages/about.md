@@ -22,42 +22,42 @@ In terms of my undergraduate study, I was at the [Department of Biomedical Engin
 
 During my senior year, I joined [Prof. Aaron Wheeler](https://bme.utoronto.ca/faculty-research/core-faculty/aaron-wheeler/)’s Lab at the [University of Toronto](https://www.utoronto.ca/), Canada and finished my undergraduate thesis about [digital microfluidics](https://microfluidics.utoronto.ca/). 
 
-My research interest includes Microfluidics, Cancer Reaserch and Nano-scale Technology.
+My research interest includes Microfluidics, Nanotechnology, Single-cell Analysis and Oncology.
 
-
+# 🔥 News
+- *2025.07*: &nbsp;🎉🎉 My first paper has been accepted for publication in **Cell Reports Method**!
+- *2025.06*: &nbsp;I passed the preliminary exam and advanced to PhD candidacy!
+- *2024.12*: &nbsp;I reached 100 citations on Google Scholar.
+- *2023.09*: &nbsp;I started my PhD journey in the Chen Lab at the University of Pittsburgh!
+- *2023.09*: &nbsp;I was admitted to PhD programs at UofT, Pitt, NYU, and UMN; and MS programs at UCLA and CMU.
+- *2022.09*: &nbsp;I joined the Wheeler Lab at the University of Toronto as a visiting undergraduate researcher.
+- *2020.09*: &nbsp;I joined the Jiang Group at SUSTech as an undergraduate researcher.
 
 # 📝 Publications 
 
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Analytical Chemistry 2025</div><img src='images/AC.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-
+  
 [High-Throughput Empirical and Virtual Screening To Discover Novel Inhibitors of Polyploid Giant Cancer Cells in Breast Cancer](https://pubs.acs.org/doi/full/10.1021/acs.analchem.4c05138)
-
 Yushu Ma, Chien-Hung Shih, **Jinxiong Cheng**, Hsiao-Chun Chen, Li-Ju Wang, Yanhao Tan, Yuan Zhang, Daniel D Brown, Steffi Oesterreich, Adrian V Lee, Yu-Chiao Chiu, Yu-Chih Chen*
-
 </div>
 </div>
 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Biosensors 2024</div><img src='images/Biosensors.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-
+  
 [Tumor Microenvironment Based on Extracellular Matrix Hydrogels for On-Chip Drug Screening](https://www.mdpi.com/2079-6374/14/9/429)
-
 Xiaoyan Liu, **Jinxiong Cheng**, Yingcan Zhao
-
 </div>
 </div>
 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACS nano 2024</div><img src='images/ACS nano.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-
+  
 [Coupling Nanoscale Precision with Multiscale Imaging: A Multifunctional Near-Infrared Dye for the Brain](https://pubs.acs.org/doi/abs/10.1021/acsnano.4c06103)
-
 Xiaoyan Liu, Yao Chen, Chen Hang, **Jinxiong Cheng**, Dinglu Peng, Ying Li, Xingyu Jiang*
-
 </div>
 </div>
 
@@ -65,9 +65,7 @@ Xiaoyan Liu, Yao Chen, Chen Hang, **Jinxiong Cheng**, Dinglu Peng, Ying Li, Xing
 <div class='paper-box-text' markdown="1">
 
 [The nature of PDMS affects the results of the immunoassays carried out in microfluidic channels](https://www.sciencedirect.com/science/article/pii/S2950435X24000027)
-
 Chengyu Liu, **Jinxiong Cheng**, Yan Liu, Lei Mou, Yong Xia, Pengfei Wang, Xingyu Jiang*
-
 </div>
 </div>
 
@@ -75,17 +73,10 @@ Chengyu Liu, **Jinxiong Cheng**, Yan Liu, Lei Mou, Yong Xia, Pengfei Wang, Xingy
 <div class='paper-box-text' markdown="1">
 
 [Bioeffects of inhaled nanoplastics on neurons and alteration of animal behaviors through deposition in the brain](https://pubs.acs.org/doi/abs/10.1021/acs.nanolett.1c04184)
-
 Xiaoyan Liu, Yingcan Zhao, Jiabin Dou, Qinghong Hou, **Jinxiong Cheng**, Xingyu Jiang*
 
 </div>
 </div>
-
-# 🔥 News
-- *2025.07*: &nbsp;🎉🎉 My first paper has been accepted for publication in **Cell Reports Method**!
-- *2025.06*: &nbsp;I passed the preliminary exam and advanced to PhD candidacy!
-- *2023.09*: &nbsp;I started my PhD journey in the Chen Lab at the University of Pittsburgh!
-- *2022.09*: &nbsp;I joined the Wheeler Lab at the University of Toronto as a visiting undergraduate researcher. 
 
 
 # 🎖 Honors and Awards
@@ -101,6 +92,18 @@ Xiaoyan Liu, Yingcan Zhao, Jiabin Dou, Qinghong Hou, **Jinxiong Cheng**, Xingyu 
 - *2019.09 - 2023.06*, Undergraduate, Southern Univeristy of Science and Technology, Shenzhen, China. 
 - *2016.09 - 2019.06*, Hefei No.8 High School, Hefei, China. 
 
+# 📚 Research Projects
+- Blocking cancer metastasis by targeting cell migration
+  - Discover potent cell migration inhibitors and testing their efficacy in vivo
+  - Enhance the efficiency of cell usage with a 3D-printed plug
+- dECM-based cancer chip for high-throughput drug screening
+  - Construct a microfluidic chip based on the neural and stromal microenvironment of pancreatic cancer, investigate the relationship between different types of cells
+- Research on the effect of nanoplastics on animal neurons
+  - Study the neurotoxicity of polystyrene nanoplastics (PS-COOH, PS-NH2) at different sizes
+  - Demonstrate behavioral alterations in model organisms due to nanoplastic exposure
 
 # 💻 Internships
-- *2022.09 - 2022.12*, University of Toronto, Canada.
+- *2022.09 - 2022.12*, University of Toronto, Ontario, Canada.
+
+# 👨‍⚖️ Teaching Assistant
+- BIOENG 1220  BIOTRANSPORT PHENOMENA (2024 Fall)
