@@ -20,18 +20,18 @@ redirect_from:
 I am currently a Ph.D. student in the [Department of Bioengineering](https://engineering.pitt.edu/departments/bioengineering/) of the [University of Pittsburgh](https://www.pitt.edu/),  and a member of [Chen Lab](https://www.ycchenlab.org/) under the supervision of [Prof. Yu-Chih Chen](https://www.engineering.pitt.edu/people/faculty/yu-chih-chen/) at [Hillman Cancer Center](https://hillman.upmc.com/).
 In terms of my undergraduate study, I was at the [Department of Biomedical Engineering](https://bme.sustech.edu.cn/en/) , [Southern University of Science and Technology](https://www.sustech.edu.cn/) (南方科技大学生物医学工程系), advised by [Prof. Xingyu Jiang (蒋兴宇)](https://www.sustech.edu.cn/en/faculties/jiangxingyu.html).
 
-During my senior year, I joined [Prof. Aaron Wheeler](https://bme.utoronto.ca/faculty-research/core-faculty/aaron-wheeler/)’s Lab at the [University of Toronto](https://www.utoronto.ca/), Canada and finished my undergraduate thesis about [digital microfluidics](https://microfluidics.utoronto.ca/). 
+During my senior year, I joined [Prof. Aaron Wheeler](https://bme.utoronto.ca/faculty-research/core-faculty/aaron-wheeler/)’s Lab at the [University of Toronto](https://www.utoronto.ca/), and finished my undergraduate thesis about [digital microfluidics](https://microfluidics.utoronto.ca/). 
 
-My research interest includes Microfluidics, Nanotechnology, Single-cell Analysis and Oncology.
+My research interest includes microfluidics, nanotechnology, single-cell analysis and oncology.
 
 # 🔥 News
-- *2025.07*: &nbsp;🎉🎉 My first paper has been accepted for publication in **Cell Reports Method**!
-- *2025.06*: &nbsp;I passed the preliminary exam and advanced to PhD candidacy!
-- *2024.12*: &nbsp;I reached 100 citations on Google Scholar.
-- *2023.09*: &nbsp;I started my PhD journey in the Chen Lab at the University of Pittsburgh!
-- *2023.09*: &nbsp;I was admitted to PhD programs at UofT, Pitt, NYU, and UMN; and MS programs at UCLA and CMU.
-- *2022.09*: &nbsp;I joined the Wheeler Lab at the University of Toronto as a visiting undergraduate researcher.
-- *2020.09*: &nbsp;I joined the Jiang Group at SUSTech as an undergraduate researcher.
+- *2025.07*: &nbsp;🎉🎉My first paper has been accepted for publication in **Cell Reports Method**!
+- *2025.06*: &nbsp;🎉🎉I passed the preliminary exam and advanced to PhD candidacy!
+- *2024.12*: &nbsp;🎉🎉I reached 100 citations on Google Scholar.
+- *2023.09*: &nbsp;🌞🌞I started my PhD journey in the Chen Lab at the University of Pittsburgh!
+- *2023.09*: &nbsp;📜📜I was admitted to PhD programs at UofT, Pitt, NYU, and UMN; MS programs at UCLA, BU, Cornell and CMU.
+- *2022.09*: &nbsp;🌞🌞I joined the Wheeler Lab at the University of Toronto as a visiting undergraduate researcher.
+- *2020.09*: &nbsp;🌞🌞I joined the Jiang Group at SUSTech as an undergraduate researcher.
 
 # 📝 Publications 
 
@@ -40,7 +40,8 @@ My research interest includes Microfluidics, Nanotechnology, Single-cell Analysi
   
 [High-Throughput Empirical and Virtual Screening To Discover Novel Inhibitors of Polyploid Giant Cancer Cells in Breast Cancer](https://pubs.acs.org/doi/full/10.1021/acs.analchem.4c05138)
 
-Yushu Ma, Chien-Hung Shih, **Jinxiong Cheng**, Hsiao-Chun Chen, Li-Ju Wang, Yanhao Tan, Yuan Zhang, Daniel D Brown, Steffi Oesterreich, Adrian V Lee, Yu-Chiao Chiu, Yu-Chih Chen*
+Yushu Ma, Chien-Hung Shih, **Jinxiong Cheng**, Hsiao-Chun Chen, Li-Ju Wang, Yanhao Tan, Yuan Zhang, Daniel D Brown, Steffi Oesterreich, Adrian V Lee, Yu-Chiao Chiu*, Yu-Chih Chen*
+
 </div>
 </div>
 
@@ -51,6 +52,7 @@ Yushu Ma, Chien-Hung Shih, **Jinxiong Cheng**, Hsiao-Chun Chen, Li-Ju Wang, Yanh
 [Tumor Microenvironment Based on Extracellular Matrix Hydrogels for On-Chip Drug Screening](https://www.mdpi.com/2079-6374/14/9/429)
 
 Xiaoyan Liu, **Jinxiong Cheng**, Yingcan Zhao
+
 </div>
 </div>
 
@@ -61,6 +63,7 @@ Xiaoyan Liu, **Jinxiong Cheng**, Yingcan Zhao
 [Coupling Nanoscale Precision with Multiscale Imaging: A Multifunctional Near-Infrared Dye for the Brain](https://pubs.acs.org/doi/abs/10.1021/acsnano.4c06103)
 
 Xiaoyan Liu, Yao Chen, Chen Hang, **Jinxiong Cheng**, Dinglu Peng, Ying Li, Xingyu Jiang*
+
 </div>
 </div>
 
@@ -70,6 +73,7 @@ Xiaoyan Liu, Yao Chen, Chen Hang, **Jinxiong Cheng**, Dinglu Peng, Ying Li, Xing
 [The nature of PDMS affects the results of the immunoassays carried out in microfluidic channels](https://www.sciencedirect.com/science/article/pii/S2950435X24000027)
 
 Chengyu Liu, **Jinxiong Cheng**, Yan Liu, Lei Mou, Yong Xia, Pengfei Wang, Xingyu Jiang*
+
 </div>
 </div>
 
@@ -108,7 +112,7 @@ Xiaoyan Liu, Yingcan Zhao, Jiabin Dou, Qinghong Hou, **Jinxiong Cheng**, Xingyu 
   - Demonstrate behavioral alterations in model organisms due to nanoplastic exposure
 
 # 💻 Internships
-- *2022.09 - 2022.12*, University of Toronto, Ontario, Canada.
+- *2022.09 - 2022.12*, University of Toronto, Toronto, Canada.
 
 # 👨‍⚖️ Teaching Assistant
 - BIOENG 1220  BIOTRANSPORT PHENOMENA (2024 Fall)
