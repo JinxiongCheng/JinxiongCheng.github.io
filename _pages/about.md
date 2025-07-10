@@ -28,10 +28,10 @@ My research interest includes microfluidics, nanotechnology, single-cell analysi
 - *2025.07*: &nbsp;🎉🎉My first paper has been accepted  in **Cell Reports Methods**!
 - *2025.06*: &nbsp;🎉🎉I passed the preliminary exam and advanced to PhD candidacy!
 - *2024.12*: &nbsp;🎉🎉I reached 100 citations on Google Scholar.
-- *2023.09*: &nbsp;🌞🌞I started my PhD journey in the Chen Lab at the University of Pittsburgh!
-- *2023.09*: &nbsp;📜📜I was admitted to PhD programs at UofT, Pitt, NYU, and UMN; MS programs at UCLA, BU, Cornell and CMU.
-- *2022.09*: &nbsp;🌞🌞I joined the Wheeler Lab at the University of Toronto as a visiting undergraduate researcher.
-- *2020.09*: &nbsp;🌞🌞I joined the Jiang Group at SUSTech as an undergraduate researcher.
+- *2023.09*: &nbsp; I started my PhD journey in the Chen Lab at the University of Pittsburgh!
+- *2023.04*: &nbsp; I was admitted to PhD programs at UofT, Pitt, NYU, and UMN; MS programs at UCLA, BU, Cornell and CMU.
+- *2022.09*: &nbsp; I joined the Wheeler Lab at the University of Toronto as a visiting undergraduate researcher.
+- *2020.09*: &nbsp; I joined the Jiang Group at SUSTech as an undergraduate researcher.
 
 # 📝 Publications 
 
@@ -40,7 +40,7 @@ My research interest includes microfluidics, nanotechnology, single-cell analysi
   
 [High-Throughput Empirical and Virtual Screening To Discover Novel Inhibitors of Polyploid Giant Cancer Cells in Breast Cancer](https://pubs.acs.org/doi/full/10.1021/acs.analchem.4c05138)
 
-Yushu Ma, Chien-Hung Shih, **Jinxiong Cheng**, Hsiao-Chun Chen, Li-Ju Wang, Yanhao Tan, Yuan Zhang, Daniel D Brown, Steffi Oesterreich, Adrian V Lee, Yu-Chiao Chiu*, Yu-Chih Chen*
+Yushu Ma, Chien-Hung Shih, **Jinxiong Cheng**, Hsiao-Chun Chen, Li-Ju Wang, Yanhao Tan, Yuan Zhang, Daniel D Brown, Steffi Oesterreich, Adrian V Lee, Yu-Chiao Chiu, Yu-Chih Chen*
 
 </div>
 </div>
