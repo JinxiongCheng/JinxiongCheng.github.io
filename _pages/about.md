@@ -35,7 +35,7 @@ My research interest includes microfluidics, nanotechnology, single-cell analysi
 # 📝 Publications 
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Cell Reports Methods 2025</div><img src='Plug_GA.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Cell Reports Methods 2025</div><img src='images/Plug_GA.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
   
 [3D-printed plugs enhance cell usage efficiency for single-cell migration and neuron axon guidance assays](https://www.cell.com/cell-reports-methods/fulltext/S2667-2375(25)00153-5)
