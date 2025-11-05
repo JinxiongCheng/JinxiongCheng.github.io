@@ -25,12 +25,23 @@ During my senior year, I joined [Prof. Aaron Wheeler](https://bme.utoronto.ca/fa
 My research interest includes microfluidics, nanotechnology, single-cell analysis and oncology.
 
 # 🔥 News
+- *2025.10*: &nbsp;🎉🎉My critical review paper has been accepted  in **Lab on a Chip**!
 - *2025.07*: &nbsp;🎉🎉My first paper has been accepted  in **Cell Reports Methods**!
 - *2023.09*: &nbsp; I started my PhD journey in the Chen Lab at the University of Pittsburgh!
 - *2022.09*: &nbsp; I joined the Wheeler Lab at the University of Toronto as a visiting undergraduate researcher.
 - *2020.09*: &nbsp; I joined the Jiang Group at SUSTech as an undergraduate researcher.
 
 # 📝 Publications 
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Lab on a Chip 2025</div><img src='images/LabChipReview.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+  
+[Transforming microfluidics for single-cell analysis with robotics and artificial intelligence](https://pubs.rsc.org/en/content/articlelanding/2025/lc/d5lc00216h)
+
+**Jinxiong Cheng**, Rajiv Anne, Yu-Chih Chen*
+
+</div>
+</div>
 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Cell Reports Methods 2025</div><img src='images/Plug_GA.png' alt="sym" width="100%"></div></div>
@@ -125,4 +136,4 @@ Xiaoyan Liu, Yingcan Zhao, Jiabin Dou, Qinghong Hou, **Jinxiong Cheng**, Xingyu 
 - *2022.09 - 2022.12*, University of Toronto, Toronto, Canada.
 
 # 👨‍⚖️ Teaching Assistant
-- BIOENG 1220  BIOTRANSPORT PHENOMENA (2024 Fall)
+- BIOENG 1220  BIOTRANSPORT PHENOMENA (2024 Fall & 2025 Fall)
