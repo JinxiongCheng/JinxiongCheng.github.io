@@ -22,7 +22,7 @@ In terms of my undergraduate study, I was at the [Department of Biomedical Engin
 
 During my senior year, I joined [Prof. Aaron Wheeler](https://bme.utoronto.ca/faculty-research/core-faculty/aaron-wheeler/)’s Lab at the [University of Toronto](https://www.utoronto.ca/), and finished my undergraduate thesis about [digital microfluidics](https://microfluidics.utoronto.ca/). 
 
-My research interest includes microfluidics, nanotechnology, single-cell analysis and oncology.
+My research interest includes microfluidics, nanotechnology, single-cell analysis, deep learning and oncology.
 
 # 🔥 News
 - *2025.10*: &nbsp;🎉🎉My critical review paper has been accepted  in **Lab on a Chip**!
@@ -31,7 +31,18 @@ My research interest includes microfluidics, nanotechnology, single-cell analysi
 - *2022.09*: &nbsp; I joined the Wheeler Lab at the University of Toronto as a visiting undergraduate researcher.
 - *2020.09*: &nbsp; I joined the Jiang Group at SUSTech as an undergraduate researcher.
 
-# 📝 Publications 
+# 📝 Selected Publications 
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Cancer Letters 2026</div><img src='images/Cancer Letters 2026.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+  
+[High-throughput drug screening for targeting polyploid cancer cells with an interactive web portal](https://www.sciencedirect.com/science/article/pii/S0304383526000522)
+
+Hsiao-Chun Chen, Li-Ju Wang, Chien-Hung Shih, Huikang Ye, Ying-Ju Lai, **Jinxiong Cheng**, Yuan Zhang, Yushu Ma, Tiffany Habib, Shailrajsinh H Jhala, Hsi-Chun Wang, Yu-Chiao Chiu, Yu-Chih Chen*
+
+</div>
+</div>
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Lab on a Chip 2025</div><img src='images/LabChipReview.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -88,15 +99,6 @@ Xiaoyan Liu, Yao Chen, Chen Hang, **Jinxiong Cheng**, Dinglu Peng, Ying Li, Xing
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Biomedical Analysis 2024</div><img src='images/Biomedical Analysis.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[The nature of PDMS affects the results of the immunoassays carried out in microfluidic channels](https://www.sciencedirect.com/science/article/pii/S2950435X24000027)
-
-Chengyu Liu, **Jinxiong Cheng**, Yan Liu, Lei Mou, Yong Xia, Pengfei Wang, Xingyu Jiang*
-
-</div>
-</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Nano Letters 2022</div><img src='images/Nano Letters.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -112,28 +114,18 @@ Xiaoyan Liu, Yingcan Zhao, Jiabin Dou, Qinghong Hou, **Jinxiong Cheng**, Xingyu 
 # 🎖 Honors and Awards
 - *2023.05* Outstanding graduates at the school level of SUSTech
 - *2022.10* Special Funds for the Cultivation of Guangdong College Students’ Scientific and Technological Innovation (‘Climbing Program’)
-- *2022.09* Second-class Outstanding Students Scholarship
-- *2021.09* First-class Outstanding Students Scholarship (Top 5%)
+- *2021.09* First-class Outstanding Students Scholarship
 - *2021.05* Undergraduate Innovation and Entrepreneurship Training Programs
-- *2020.09* Second-class Outstanding Students Scholarship
 
 # 📖 Educations
 - *2023.09 - present*, Doctor of Philosophy, Bioengineering, University of Pittsburgh, Pittsburgh, United States.
 - *2019.09 - 2023.06*, Undergraduate, Southern Univeristy of Science and Technology, Shenzhen, China. 
 - *2016.09 - 2019.06*, Hefei No.8 High School, Hefei, China. 
 
-# 📚 Research Projects
-- Blocking cancer metastasis by targeting cell migration
-  - Discover potent cell migration inhibitors and testing their efficacy in vivo
-  - Enhance the efficiency of cell usage with a 3D-printed plug
-- dECM-based cancer chip for high-throughput drug screening
-  - Construct a microfluidic chip based on the neural and stromal microenvironment of pancreatic cancer, investigate the relationship between different types of cells
-- Research on the effect of nanoplastics on animal neurons
-  - Study the neurotoxicity of polystyrene nanoplastics (PS-COOH, PS-NH2) at different sizes
-  - Demonstrate behavioral alterations in model organisms due to nanoplastic exposure
 
 # 💻 Internships
-- *2022.09 - 2022.12*, University of Toronto, Toronto, Canada.
+- *2022.09 - 2022.12*, The Wheeler Lab, University of Toronto, Toronto, Canada. Mentor: Prof. Aaron Wheeler
 
-# 👨‍⚖️ Teaching Assistant
-- BIOENG 1220  BIOTRANSPORT PHENOMENA (2024 Fall & 2025 Fall)
+# 💾 Services
+- Journal Reviewer:Biomaterials Research, ACS Omega, Journal of Medical Internet Research(JMIR), Biotechnology Journal, Biotechnology and Applied Biochemistry, JMIR  Public Health and Surveillance
+- Teaching Assistant:BIOENG 1220  BIOTRANSPORT PHENOMENA (2024 Fall & 2025 Fall, University of Pittsburgh)
