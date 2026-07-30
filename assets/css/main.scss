@@ -636,17 +636,29 @@ body {
         background: linear-gradient(90deg, var(--primary), var(--accent));
     }
 
-    /* The theme lays this out as table-cells in a row below $large, which on a
-       phone squeezes the name into a sliver and pushes the icons off the edge.
-       Stack and centre it at every width instead. */
+    /* The theme lays this out as table-cells in a row below $large and reverts
+       to display:block above it, so the pieces were spaced by a mix of the
+       theme's margins — 3px under the name against 15px under the tagline.
+       One flex column with a single gap spaces them evenly at every width. */
+    display: flex !important;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: .7em;
+
+    > *,
+    .author__name,
+    .author__tagline,
+    .author__bio,
+    .author__email,
+    .author__tags {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 
     .author__avatar,
     .author__content,
     .author__urls-wrapper {
-        display: block;
         width: 100%;
         max-width: 100%;
         min-width: 0;
@@ -654,14 +666,30 @@ body {
         margin-left: 0;
     }
 
+    .author__urls-wrapper {
+        display: block;
+    }
+
+    /* flex column so the gap below spaces name / tagline / affiliation / email;
+       declared here because the grouped rule above outranks a bare
+       .author__content selector */
+    .author__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .3em;
+    }
+
     /* The theme flips .profile_box back to display:block at $large, so a
        block-level avatar fills the card and the gradient ring behind it
-       stretches into an ellipse. Keep it hugging the portrait. */
+       stretches into an ellipse. inline-block shrink-wraps the portrait in
+       both a block and a flex parent — `width: fit-content` needs the
+       -webkit- prefix on older Safari/iOS and silently falls back to full
+       width there, which is the same ellipse again. */
     .author__avatar {
-        display: block;
-        width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
+        display: inline-block;
+        width: auto;
+        max-width: 100%;
     }
 }
 
@@ -694,18 +722,22 @@ body {
         box-shadow: 0 0 0 4px var(--card-bg), 0 6px 18px rgba(31, 41, 55, 0.12);
 
         /* The source portrait is not square, so a 50% radius produced an
-           ellipse and the ring behind it followed. Crop to a square instead. */
+           ellipse and the ring behind it followed. Crop to a square instead.
+           `.sidebar img { width: 100% }` and the theme's min-width both carry
+           the same specificity as this rule, so they are pinned here rather
+           than left to source order. */
         object-fit: cover;
         object-position: center 20%;
-        width: 175px;
-        height: 175px;
+        width: 175px !important;
+        height: 175px !important;
+        min-width: 0 !important;
+        max-width: none !important;
 
         /* the theme's 175px portrait dominates the card once it stacks on a
            phone; the sidebar has room for it again at the large breakpoint */
         @include breakpoint(max-width $large) {
-            width: 62px;
-            height: 62px;
-            min-width: 0;
+            width: 62px !important;
+            height: 62px !important;
         }
 
         @include breakpoint($large) {
@@ -719,10 +751,15 @@ body {
     to { transform: rotate(360deg); }
 }
 
+/* name / tagline / affiliation / email are wrapped in .author__content, so the
+   card's own gap does not reach them — space them here on the same principle */
 .author__content {
-    @include breakpoint($large) {
-        text-align: center;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .3em;
+    text-align: center;
+    line-height: 1.35;
 }
 
 .author__name {
@@ -944,7 +981,6 @@ body {
 
         .exp-logo {
             transform: scale(1.06);
-            border-color: var(--exp-color, var(--primary));
         }
     }
 }
@@ -955,6 +991,17 @@ body {
     gap: .7em;
 }
 
+/* The crest is a link, so the page's underline-on-hover drew a rule beneath it
+   — there is no text for that rule to belong to. Scoped under .page__content so
+   it outranks `.page__content a:hover`, which is otherwise more specific. */
+.page__content .exp-logo,
+.page__content .exp-logo:hover,
+.page__content .exp-logo:focus {
+    background-image: none;
+    background-size: 0 0;
+    text-decoration: none;
+}
+
 .exp-logo {
     display: flex;
     align-items: center;
@@ -962,23 +1009,28 @@ body {
     flex-shrink: 0;
     width: 2.9rem;
     height: 2.9rem;
-    padding: .35rem;
+    /* round plate, so the crest reads as a medallion rather than a tile */
+    padding: .32rem;
     background: #fff;
-    border: 1px solid var(--border);
-    border-radius: 12px;
     background-image: none;
-    box-shadow: 0 1px 4px rgba(31, 41, 55, 0.08);
-    transition: transform .25s ease, border-color .25s ease;
-
-    &:hover {
-        background-size: 0 1px;
-    }
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(31, 41, 55, 0.12);
+    transition: transform .25s ease, box-shadow .25s ease;
 
     img {
         width: 100%;
         height: 100%;
         object-fit: contain;
+        border-radius: 50%;
     }
+}
+
+/* the plate is white, so keep it light in dark mode or the navy crests vanish */
+[data-theme="dark"] .exp-logo {
+    background: #f2f4f8;
+    border-color: transparent;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
 }
 
 .exp-title {
