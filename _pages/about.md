@@ -21,6 +21,14 @@ Hi there! I'm **Jinxiong Cheng** 👋 I am currently a third-year Ph.D. student 
 
 My research focuses on developing microfluidic, imaging, and computational platforms to study cancer cell migration at single-cell resolution and accelerate therapeutic discovery.
 
+<div class="callout">
+  <p><b>I am open to research collaborations and to opportunities beginning in 2028.</b> If our interests overlap &mdash; microfluidics, single-cell analysis, or machine learning for drug discovery &mdash; I would be glad to hear from you.</p>
+  <p class="callout__actions">
+    <a class="btn-cta" href="mailto:jic259@pitt.edu">Email me</a>
+    <a class="btn-cta btn-cta--ghost" href="files/CV_Jinxiong_Cheng.pdf" target="_blank" rel="noopener">View CV (PDF)</a>
+  </p>
+</div>
+
 <div class="exp-grid">
   <div class="exp-card" style="--exp-color:#003594">
     <div class="exp-head">

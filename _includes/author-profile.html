@@ -17,6 +17,21 @@
     {% endif %}
   </div>
 
+  {% if author.googlescholar %}
+    {%- if site.google_scholar_stats_use_cdn -%}
+      {%- assign gsUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@google-scholar-stats/gs_data.json" -%}
+    {%- else -%}
+      {%- assign gsUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/google-scholar-stats/gs_data.json" -%}
+    {%- endif -%}
+    <!-- stays hidden until the numbers actually load, so a missing
+         google-scholar-stats branch shows nothing rather than a dash -->
+    <a class="author__stats" id="author-stats" href="{{ author.googlescholar }}"
+       data-gs-url="{{ gsUrl }}" target="_blank" rel="noopener" hidden>
+      <span><b id="total_cit">0</b> citations</span>
+      <span><b id="gs_hindex">0</b> h-index</span>
+    </a>
+  {% endif %}
+
   {% if author.interests %}
   <ul class="author__tags">
     {% for interest in author.interests %}

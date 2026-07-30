@@ -781,6 +781,37 @@ body {
     color: var(--text-muted);
 }
 
+/* Scholar citation stats; hidden by script until the numbers load */
+.author__stats {
+    display: flex;
+    justify-content: center;
+    gap: 1.1em;
+    margin-bottom: .2em;
+    padding: .45em .9em;
+    background: var(--primary-soft);
+    background-image: none;
+    border-radius: 999px;
+    font-size: $type-size-7;
+    color: var(--text-muted);
+    transition: background-color .2s ease;
+
+    &[hidden] { display: none; }
+
+    b {
+        color: var(--primary);
+        font-weight: 700;
+        font-variant-numeric: tabular-nums;
+    }
+
+    &:hover {
+        background: var(--primary);
+        background-size: 0 0;
+        color: #fff;
+
+        b { color: #fff; }
+    }
+}
+
 .author__email {
     display: inline-block;
     margin-bottom: 1em;
@@ -953,6 +984,85 @@ body {
             text-decoration: none;
         }
     }
+}
+
+/* availability / contact callout */
+.callout {
+    position: relative;
+    margin: 1.6em 0 0;
+    padding: 1.1em 1.3em;
+    background: var(--primary-soft);
+    border-radius: $border-radius;
+    border-left: 3px solid var(--accent);
+
+    p {
+        margin: 0;
+        line-height: 1.65;
+    }
+
+    b {
+        color: var(--heading);
+    }
+}
+
+.callout__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .6em;
+    margin-top: .9em !important;
+}
+
+.btn-cta {
+    display: inline-flex;
+    align-items: center;
+    padding: .45em 1.1em;
+    border: 1px solid var(--primary);
+    border-radius: 999px;
+    background: var(--primary);
+    background-image: none;
+    color: #fff;
+    font-size: $type-size-6;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease, color .2s ease;
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(0, 53, 148, 0.28);
+        background-size: 0 0;
+        color: #fff;
+    }
+
+    &--ghost {
+        background: transparent;
+        color: var(--primary);
+
+        &:hover {
+            background: var(--primary);
+            color: #fff;
+        }
+    }
+}
+
+/* Scoped under .page__content because that selector is more specific than a
+   bare .btn-cta — it was repainting the label in the link colour, leaving the
+   filled button blue-on-blue, and reinstating the hover underline. */
+.page__content .btn-cta,
+.page__content .btn-cta:hover,
+.page__content .btn-cta:focus {
+    background-image: none;
+    background-size: 0 0;
+    text-decoration: none;
+    color: #fff;
+}
+
+.page__content .btn-cta--ghost {
+    color: var(--primary);
+}
+
+.page__content .btn-cta--ghost:hover,
+.page__content .btn-cta--ghost:focus {
+    color: #fff;
 }
 
 /* experience cards (education / research stints) */

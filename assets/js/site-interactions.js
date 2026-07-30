@@ -82,6 +82,29 @@
     revealTargets.forEach(function (el) { el.classList.add("no-observer"); });
   }
 
+  /* ---------- Google Scholar stats ----------
+     The numbers come from the google-scholar-stats branch that this repo's
+     crawler workflow publishes. Reveal the block only once they arrive: that
+     branch does not exist until the workflow has run, and a permanent "0"
+     reads worse than showing nothing at all. */
+  var stats = document.getElementById("author-stats");
+  if (stats && stats.getAttribute("data-gs-url") && window.fetch) {
+    fetch(stats.getAttribute("data-gs-url"))
+      .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
+      .then(function (data) {
+        if (!data || !data.citedby) return;
+        document.getElementById("total_cit").textContent = data.citedby.toLocaleString();
+        var h = document.getElementById("gs_hindex");
+        if (data.hindex) {
+          h.textContent = data.hindex;
+        } else if (h && h.parentNode) {
+          h.parentNode.remove();
+        }
+        stats.hidden = false;
+      })
+      .catch(function () { /* nothing published yet — leave it hidden */ });
+  }
+
   /* ---------- open external links in a new tab ----------
      Replaces <base target="_blank">, which also hijacked same-page anchor
      links and made every nav jump open a new tab. */
