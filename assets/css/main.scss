@@ -654,8 +654,14 @@ body {
         margin-left: 0;
     }
 
+    /* The theme flips .profile_box back to display:block at $large, so a
+       block-level avatar fills the card and the gradient ring behind it
+       stretches into an ellipse. Keep it hugging the portrait. */
     .author__avatar {
-        width: auto;
+        display: block;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -687,10 +693,18 @@ body {
         border-radius: 50%;
         box-shadow: 0 0 0 4px var(--card-bg), 0 6px 18px rgba(31, 41, 55, 0.12);
 
+        /* The source portrait is not square, so a 50% radius produced an
+           ellipse and the ring behind it followed. Crop to a square instead. */
+        object-fit: cover;
+        object-position: center 20%;
+        width: 175px;
+        height: 175px;
+
         /* the theme's 175px portrait dominates the card once it stacks on a
            phone; the sidebar has room for it again at the large breakpoint */
         @include breakpoint(max-width $large) {
-            width: 118px;
+            width: 62px;
+            height: 62px;
             min-width: 0;
         }
 
@@ -836,8 +850,13 @@ body {
             background: var(--primary-soft);
         }
 
+        /* .author__urls also carries .social-icons, and the theme paints each
+           brand its own colour there — LinkedIn's #007bb6 in particular reads
+           as a different blue from the rest of the row. Let them all take the
+           palette colour so the row is one tone. */
         i {
             font-size: 1rem;
+            color: inherit;
         }
 
         a {
