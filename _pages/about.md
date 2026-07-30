@@ -124,7 +124,7 @@ My research focuses on developing microfluidic, imaging, and computational platf
 </div>
 
 
-<div class='paper-box'><div class="badge">ACS nano 2024</div><div class='paper-box-image'><div><img src='images/ACS nano.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class="badge">ACS Nano 2024</div><div class='paper-box-image'><div><img src='images/ACS nano.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text'>
   <a class="paper-title" href="https://pubs.acs.org/doi/abs/10.1021/acsnano.4c06103" target="_blank" rel="noopener">Coupling Nanoscale Precision with Multiscale Imaging: A Multifunctional Near-Infrared Dye for the Brain</a>
   <div class="paper-authors" tabindex="0">Xiaoyan Liu, Yao Chen, Chen Hang, <b>Jinxiong Cheng</b>, Dinglu Peng, Ying Li, Xingyu Jiang</div>

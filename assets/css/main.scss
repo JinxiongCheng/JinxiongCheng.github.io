@@ -687,6 +687,13 @@ body {
         border-radius: 50%;
         box-shadow: 0 0 0 4px var(--card-bg), 0 6px 18px rgba(31, 41, 55, 0.12);
 
+        /* the theme's 175px portrait dominates the card once it stacks on a
+           phone; the sidebar has room for it again at the large breakpoint */
+        @include breakpoint(max-width $large) {
+            width: 118px;
+            min-width: 0;
+        }
+
         @include breakpoint($large) {
             border: none;
             padding: 0;
