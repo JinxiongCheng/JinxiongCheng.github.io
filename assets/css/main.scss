@@ -262,6 +262,10 @@ body {
         -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2'/%3E%3Ccircle cx='12' cy='7' r='4'/%3E%3C/svg%3E");
         mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2'/%3E%3Ccircle cx='12' cy='7' r='4'/%3E%3C/svg%3E");
     }
+    h1#research-interests:before {
+        -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 3v6l-5.2 8.4A2 2 0 0 0 5.5 21h13a2 2 0 0 0 1.7-3.6L15 9V3'/%3E%3Cpath d='M8 3h8M7 15h10'/%3E%3C/svg%3E");
+        mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 3v6l-5.2 8.4A2 2 0 0 0 5.5 21h13a2 2 0 0 0 1.7-3.6L15 9V3'/%3E%3Cpath d='M8 3h8M7 15h10'/%3E%3C/svg%3E");
+    }
     h1#news:before {
         -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9h4'/%3E%3Cpath d='M18 14h-8M15 18h-5M10 6h8v4h-8z'/%3E%3C/svg%3E");
         mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9h4'/%3E%3Cpath d='M18 14h-8M15 18h-5M10 6h8v4h-8z'/%3E%3C/svg%3E");
@@ -327,6 +331,71 @@ body {
 .js .reveal-up.no-observer {
     opacity: 1;
     transform: none;
+}
+
+/* research interests */
+.ri-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: .85em;
+    margin: 1.5em 0 2.5em;
+}
+
+.ri-card {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    padding: 1.25em 1.15em;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: $border-radius;
+    box-shadow: var(--shadow);
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-hover), 0 10px 22px -10px rgba(255, 184, 28, 0.35);
+        border-color: var(--primary);
+
+        .ri-icon {
+            transform: scale(1.08) rotate(-5deg);
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: #fff;
+        }
+    }
+}
+
+.ri-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: var(--primary-soft);
+    color: var(--primary);
+    transition: transform .25s ease, background .25s ease, color .25s ease;
+
+    svg {
+        width: 1.35rem;
+        height: 1.35rem;
+    }
+}
+
+.ri-title {
+    margin: 0;
+    font-family: $header-font-family;
+    font-size: $type-size-5;
+    font-weight: 600;
+    line-height: 1.35;
+    color: var(--heading);
+}
+
+.page__content .ri-text {
+    margin: 0;
+    font-size: .9em;
+    line-height: 1.6;
+    color: var(--text-muted);
 }
 
 /* publication year rail */
