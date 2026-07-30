@@ -87,15 +87,8 @@
 
 }
 
-$scroll_offset : 2em;
-h1:before, .anchor:before { 
-    content: ''; 
-    display: block; 
-    position: relative; 
-    width: 0; 
-    height: $scroll_offset; 
-    margin-top: -$scroll_offset;
-}
+/* scroll offset is handled by scroll-margin-top further down; the old
+   :before spacer hack is gone so ::before is free for the section icons */
 
 .badge {
     padding: .3em 1em;
@@ -129,11 +122,11 @@ h1:before, .anchor:before {
     --shadow-hover: 0 12px 28px rgba(31, 41, 55, 0.16);
     --masthead-bg: rgba(255, 255, 255, 0.85);
     --heading: #1a1c20;
-    /* restrained Pitt blue/gold wash — academic, not flashy */
+    /* Pitt blue/gold wash */
     --bg-gradient:
-        radial-gradient(1000px 620px at 8% -8%, rgba(0, 53, 148, 0.07), transparent 62%),
-        radial-gradient(880px 560px at 96% 4%, rgba(255, 184, 28, 0.10), transparent 60%),
-        radial-gradient(900px 700px at 50% 108%, rgba(0, 53, 148, 0.05), transparent 64%);
+        radial-gradient(1000px 620px at 6% -8%, rgba(0, 53, 148, 0.16), transparent 62%),
+        radial-gradient(900px 580px at 97% 2%, rgba(255, 184, 28, 0.22), transparent 60%),
+        radial-gradient(900px 700px at 50% 108%, rgba(0, 53, 148, 0.11), transparent 64%);
     color-scheme: light;
 }
 
@@ -151,9 +144,9 @@ h1:before, .anchor:before {
     --masthead-bg: rgba(18, 21, 28, 0.85);
     --heading: #f2f3f5;
     --bg-gradient:
-        radial-gradient(1000px 620px at 8% -8%, rgba(0, 53, 148, 0.30), transparent 62%),
-        radial-gradient(880px 560px at 96% 4%, rgba(255, 184, 28, 0.07), transparent 60%),
-        radial-gradient(900px 700px at 50% 108%, rgba(0, 53, 148, 0.18), transparent 64%);
+        radial-gradient(1000px 620px at 6% -8%, rgba(0, 53, 148, 0.55), transparent 62%),
+        radial-gradient(900px 580px at 97% 2%, rgba(255, 184, 28, 0.16), transparent 60%),
+        radial-gradient(900px 700px at 50% 108%, rgba(0, 53, 148, 0.32), transparent 64%);
     color-scheme: dark;
 }
 
@@ -168,8 +161,24 @@ html {
 
 /* keep anchor targets clear of the sticky masthead */
 .page__content h1,
+.paper-box[id],
 .anchor {
     scroll-margin-top: 4.5rem;
+}
+
+/* briefly flag the paper a News item points at */
+@keyframes paper-flash {
+    0%, 100% { box-shadow: var(--shadow); }
+    30%      { box-shadow: 0 0 0 3px var(--accent), var(--shadow-hover); }
+}
+
+.paper-box[id]:target {
+    animation: paper-flash 1.6s ease;
+    border-color: var(--accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .paper-box[id]:target { animation: none; }
 }
 
 body {
@@ -188,6 +197,9 @@ body {
 
     /* section headers, e.g. "News", "Selected Publications" */
     h1 {
+        display: flex;
+        align-items: center;
+        gap: .55em;
         margin-top: 2.2em;
         padding-bottom: .5em;
         border-bottom: none;
@@ -197,14 +209,49 @@ body {
         letter-spacing: .01em;
         color: var(--heading);
 
+        /* line glyph painted by the palette; the SVG acts as an alpha mask */
+        &:before {
+            content: '';
+            flex: none;
+            width: 1.05em;
+            height: 1.05em;
+            background: linear-gradient(140deg, var(--primary) 20%, var(--accent) 140%);
+            -webkit-mask: var(--section-icon) center / contain no-repeat;
+            mask: var(--section-icon) center / contain no-repeat;
+            transition: transform .3s cubic-bezier(.34, 1.56, .64, 1), background .3s ease;
+        }
+
+        &:hover:before {
+            background: linear-gradient(140deg, var(--accent) 10%, var(--primary) 120%);
+            transform: translateY(-2px) scale(1.12);
+        }
+
         &:after {
             content: '';
-            display: block;
-            width: 3.5em;
-            height: 3px;
-            margin-top: .5em;
-            background: linear-gradient(90deg, var(--accent), rgba(255, 184, 28, 0));
-            border-radius: 2px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 5em;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 65%, rgba(255, 184, 28, 0) 100%);
+            border-radius: 3px;
+        }
+    }
+
+    /* per-section glyphs (stroked line icons, encoded as mask images) */
+    $icons: (
+        'about-me':            "%3Cpath d='M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2'/%3E%3Ccircle cx='12' cy='7' r='4'/%3E",
+        'news':                "%3Cpath d='M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9h4'/%3E%3Cpath d='M18 14h-8M15 18h-5M10 6h8v4h-8z'/%3E",
+        'publications':        "%3Cpath d='M4 19.5A2.5 2.5 0 0 1 6.5 17H20'/%3E%3Cpath d='M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z'/%3E",
+        'honors-and-awards':   "%3Ccircle cx='12' cy='8' r='6'/%3E%3Cpath d='M15.477 12.89 17 22l-5-3-5 3 1.523-9.11'/%3E",
+        'education':           "%3Cpath d='M22 10 12 5 2 10l10 5 10-5Z'/%3E%3Cpath d='M6 12v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5'/%3E",
+        'internships':         "%3Crect x='2' y='7' width='20' height='14' rx='2'/%3E%3Cpath d='M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16'/%3E",
+        'services':            "%3Cpath d='M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2'/%3E%3Ccircle cx='9' cy='7' r='4'/%3E%3Cpath d='M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75'/%3E"
+    );
+
+    @each $name, $glyph in $icons {
+        h1##{$name} {
+            --section-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E#{$glyph}%3C/svg%3E");
         }
     }
 
@@ -310,6 +357,18 @@ body {
         a {
             font-weight: 600;
         }
+
+        .paper-venue {
+            display: block;
+            margin-top: .1em;
+            font-size: $type-size-6;
+            color: var(--text-muted);
+
+            em {
+                color: var(--primary);
+                font-style: italic;
+            }
+        }
     }
 }
 
@@ -320,6 +379,17 @@ body {
     -webkit-backdrop-filter: saturate(180%) blur(8px);
     border-bottom: 1px solid var(--border);
     box-shadow: 0 1px 0 rgba(31, 41, 55, 0.02);
+
+    /* Pitt blue -> gold rule across the top of the page */
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, var(--primary) 0%, var(--primary) 45%, var(--accent) 100%);
+    }
 
     a {
         transition: color .2s ease;
@@ -425,12 +495,25 @@ body {
 
 /* profile / sidebar */
 .profile_box {
+    position: relative;
+    overflow: hidden;
     padding: 1.75em 1.5em;
     background: var(--card-bg);
     border: 1px solid var(--border);
     border-radius: $border-radius;
     box-shadow: var(--shadow);
     transition: background-color .3s ease, border-color .3s ease;
+
+    /* blue -> gold cap, echoing the masthead rule */
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, var(--primary), var(--accent));
+    }
 
     @include breakpoint($large) {
         flex-direction: column;
@@ -492,7 +575,33 @@ body {
 }
 
 .author__bio {
+    margin-bottom: .25em;
     color: var(--text-muted);
+}
+
+.author__email {
+    display: inline-block;
+    margin-bottom: 1em;
+    font-family: $monospace;
+    font-size: $type-size-7;
+    color: var(--text-muted);
+    background-image: none;
+    transition: color .2s ease;
+
+    &:hover {
+        color: var(--primary);
+        background-size: 0 1px;
+    }
+}
+
+/* small inline icons inside the experience card meta rows */
+.exp-ico {
+    width: 1em;
+    height: 1em;
+    vertical-align: -.15em;
+    margin-right: .15em;
+    color: var(--primary);
+    opacity: .85;
 }
 
 /* rotating tagline under the name */

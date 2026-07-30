@@ -82,6 +82,20 @@
     revealTargets.forEach(function (el) { el.classList.add("no-observer"); });
   }
 
+  /* ---------- open external links in a new tab ----------
+     Replaces <base target="_blank">, which also hijacked same-page anchor
+     links and made every nav jump open a new tab. */
+  var links = document.querySelectorAll('a[href]');
+  Array.prototype.forEach.call(links, function (a) {
+    if (a.hasAttribute('target')) return;
+    var href = a.getAttribute('href');
+    if (!href || href.charAt(0) === '#') return;
+    if (a.protocol !== 'http:' && a.protocol !== 'https:') return;
+    if (a.host === window.location.host) return;
+    a.setAttribute('target', '_blank');
+    a.setAttribute('rel', 'noopener noreferrer');
+  });
+
   /* ---------- back to top ---------- */
   var backToTop = document.getElementById("back-to-top");
   if (backToTop) {
