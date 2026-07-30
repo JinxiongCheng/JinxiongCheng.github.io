@@ -148,7 +148,7 @@ My research focuses on developing microfluidic, imaging, and computational platf
   <li><span class="fact-main"><b>Outstanding Graduate</b> <span class="fact-sub">SUSTech</span></span><span class="fact-date">2023.05</span></li>
   <li><span class="fact-main"><b>Guangdong “Climbing Program”</b> <span class="fact-sub">Special Funds for the Cultivation of College Students’ Scientific and Technological Innovation</span></span><span class="fact-date">2022.10</span></li>
   <li><span class="fact-main"><b>First-class Outstanding Students Scholarship</b> <span class="fact-sub">SUSTech</span></span><span class="fact-date">2021.09</span></li>
-  <li><span class="fact-main"><b>Undergraduate Innovation and Entrepreneurship Training Program</b></span><span class="fact-date">2021.05</span></li>
+  <li><span class="fact-main"><b>Undergraduate Innovation and Entrepreneurship Training Program</b>, National Level <span class="fact-sub">Team Leader</span></span><span class="fact-date">2021.05</span></li>
 </ul>
 
 # Education
