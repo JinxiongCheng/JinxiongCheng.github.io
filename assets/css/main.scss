@@ -90,19 +90,27 @@
 /* scroll offset is handled by scroll-margin-top further down; the old
    :before spacer hack is gone so ::before is free for the section icons */
 
+/* Journal + year chip. Pinned to the card corner rather than floated over the
+   figure, so it lands in the same place on every entry and never sits on top
+   of a graphical abstract's own labels. */
 .badge {
-    padding: .3em 1em;
     position: absolute;
-    margin-top: .8em;
-    margin-left: .8em;
-    color: #1a1c20;
-    background-color: $accent-color;
+    top: .85rem;
+    left: .85rem;
+    z-index: 2;
+    padding: .32em .85em;
+    color: #fff;
+    background: linear-gradient(135deg, $primary-color 0%, mix($primary-color, $accent-color, 35%) 55%, $accent-color 100%);
     font-family: $sans-serif;
     font-size: .7em;
     font-weight: 700;
-    letter-spacing: .04em;
+    letter-spacing: .03em;
+    line-height: 1.5;
+    white-space: nowrap;
     border-radius: 999px;
-    box-shadow: 0 2px 8px rgba(255, 184, 28, 0.4);
+    box-shadow:
+        0 2px 10px rgba(0, 53, 148, 0.32),
+        inset 0 1px 0 rgba(255, 255, 255, 0.28);
 }
 
 /* ==========================================================================
@@ -159,11 +167,13 @@ html {
     html { scroll-behavior: auto; }
 }
 
-/* keep anchor targets clear of the sticky masthead */
+/* Keep anchor targets clear of the sticky masthead. It is ~54px and
+   translucent, so a tight offset leaves the heading glyph showing through the
+   blur; this buys real separation. */
 .page__content h1,
 .paper-box[id],
 .anchor {
-    scroll-margin-top: 4.5rem;
+    scroll-margin-top: 6.5rem;
 }
 
 /* briefly flag the paper a News item points at */
@@ -321,13 +331,14 @@ body {
 
 /* publication cards */
 .paper-box {
+    position: relative;   /* anchors the journal badge to the card corner */
     align-items: stretch;
     border-bottom: none;
     background: var(--card-bg);
     border: 1px solid var(--border);
     border-radius: $border-radius;
     box-shadow: var(--shadow);
-    padding: 1.5em;
+    padding: 3.1em 1.5em 1.5em;   /* room for the badge above the figure */
     margin-bottom: 1.75em;
     transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease, background-color .3s ease;
 
@@ -483,6 +494,34 @@ body {
     .hidden-links {
         background: var(--card-bg);
         border-color: var(--border);
+
+        a { color: var(--text); }
+    }
+
+    /* The theme paints the overflow toggle as a solid block the full height of
+       the bar, which reads as a slab sitting on top of the last visible link.
+       Make it a quiet icon button and keep the links clear of it. */
+    button {
+        height: auto;
+        padding: .35rem .5rem;
+        border-radius: 8px;
+        background-color: transparent;
+        color: var(--primary);
+
+        &:hover {
+            background-color: var(--primary-soft);
+        }
+    }
+
+    .visible-links {
+        padding-right: 2.75rem;
+    }
+
+    /* the navicon bars are hardcoded #fff for the old solid button */
+    .navicon,
+    .navicon:before,
+    .navicon:after {
+        background: currentColor;
     }
 }
 
@@ -583,10 +622,26 @@ body {
         background: linear-gradient(90deg, var(--primary), var(--accent));
     }
 
-    @include breakpoint($large) {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    /* The theme lays this out as table-cells in a row below $large, which on a
+       phone squeezes the name into a sliver and pushes the icons off the edge.
+       Stack and centre it at every width instead. */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .author__avatar,
+    .author__content,
+    .author__urls-wrapper {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .author__avatar {
+        width: auto;
     }
 }
 
@@ -788,14 +843,33 @@ body {
     }
 }
 
-.author__urls_sm a {
-    transition: color .2s ease, transform .2s ease;
-    display: inline-block;
+/* the small-screen icon row: the theme leaves these as inline links at 1.75em,
+   which stacked and clipped once the card became a narrow column */
+.author__urls_sm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .4em;
+    padding: 0;
+    font-size: 1em;
 
-    &:hover {
-        color: var(--accent);
-        transform: translateY(-2px);
-        text-decoration: none;
+    a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.2rem;
+        height: 2.2rem;
+        border-radius: 50%;
+        background: var(--primary-soft);
+        color: var(--primary);
+        transition: background-color .2s ease, color .2s ease, transform .2s ease;
+
+        &:hover {
+            background: var(--primary);
+            color: #fff;
+            transform: translateY(-2px);
+            text-decoration: none;
+        }
     }
 }
 

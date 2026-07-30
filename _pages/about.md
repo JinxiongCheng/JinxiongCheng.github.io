@@ -78,7 +78,7 @@ My research focuses on developing microfluidic, imaging, and computational platf
 
 # Publications
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Cancer Letters 2026</div><img src='images/Cancer Letters 2026.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class="badge">Cancer Letters 2026</div><div class='paper-box-image'><div><img src='images/Cancer Letters 2026.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text'>
   <a class="paper-title" href="https://www.sciencedirect.com/science/article/pii/S0304383526000522" target="_blank" rel="noopener">High-throughput drug screening for targeting polyploid cancer cells with an interactive web portal</a>
   <div class="paper-authors" tabindex="0">Hsiao-Chun Chen, Li-Ju Wang, Chien-Hung Shih, Huikang Ye, Ying-Ju Lai, <b>Jinxiong Cheng</b>, Yuan Zhang, Yushu Ma, Tiffany Habib, Shailrajsinh H Jhala, Hsi-Chun Wang, Yu-Chiao Chiu, Yu-Chih Chen</div>
@@ -87,7 +87,7 @@ My research focuses on developing microfluidic, imaging, and computational platf
 </div>
 
 
-<div class='paper-box' id='pub-lab-on-a-chip'><div class='paper-box-image'><div><div class="badge">Lab on a Chip 2025</div><img src='images/LabChipReview.png' alt="sym" width="100%"></div></div>
+<div class='paper-box' id='pub-lab-on-a-chip'><div class="badge">Lab on a Chip 2025</div><div class='paper-box-image'><div><img src='images/LabChipReview.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text'>
   <a class="paper-title" href="https://pubs.rsc.org/en/content/articlelanding/2025/lc/d5lc00216h" target="_blank" rel="noopener">Transforming microfluidics for single-cell analysis with robotics and artificial intelligence</a>
   <div class="paper-authors" tabindex="0"><b>Jinxiong Cheng</b>, Rajiv Anne, Yu-Chih Chen</div>
@@ -96,7 +96,7 @@ My research focuses on developing microfluidic, imaging, and computational platf
 </div>
 
 
-<div class='paper-box' id='pub-cell-reports-methods'><div class='paper-box-image'><div><div class="badge">Cell Reports Methods 2025</div><img src='images/Plug_GA.png' alt="sym" width="100%"></div></div>
+<div class='paper-box' id='pub-cell-reports-methods'><div class="badge">Cell Reports Methods 2025</div><div class='paper-box-image'><div><img src='images/Plug_GA.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text'>
   <a class="paper-title" href="https://www.cell.com/cell-reports-methods/fulltext/S2667-2375(25)00153-5" target="_blank" rel="noopener">3D-printed plugs enhance cell usage efficiency for single-cell migration and neuron axon guidance assays</a>
   <div class="paper-authors" tabindex="0"><b>Jinxiong Cheng</b>, Edwin C Rock, Mishal Rao, Hsiao-Chun Chen, Yushu Ma, Kun-Che Chang, Yu-Chih Chen</div>
@@ -106,7 +106,7 @@ My research focuses on developing microfluidic, imaging, and computational platf
 
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Analytical Chemistry 2025</div><img src='images/AC.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class="badge">Analytical Chemistry 2025</div><div class='paper-box-image'><div><img src='images/AC.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text'>
   <a class="paper-title" href="https://pubs.acs.org/doi/full/10.1021/acs.analchem.4c05138" target="_blank" rel="noopener">High-Throughput Empirical and Virtual Screening To Discover Novel Inhibitors of Polyploid Giant Cancer Cells in Breast Cancer</a>
   <div class="paper-authors" tabindex="0">Yushu Ma, Chien-Hung Shih, <b>Jinxiong Cheng</b>, Hsiao-Chun Chen, Li-Ju Wang, Yanhao Tan, Yuan Zhang, Daniel D Brown, Steffi Oesterreich, Adrian V Lee, Yu-Chiao Chiu, Yu-Chih Chen</div>
@@ -115,7 +115,7 @@ My research focuses on developing microfluidic, imaging, and computational platf
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Biosensors 2024</div><img src='images/Biosensors.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class="badge">Biosensors 2024</div><div class='paper-box-image'><div><img src='images/Biosensors.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text'>
   <a class="paper-title" href="https://www.mdpi.com/2079-6374/14/9/429" target="_blank" rel="noopener">Tumor Microenvironment Based on Extracellular Matrix Hydrogels for On-Chip Drug Screening</a>
   <div class="paper-authors" tabindex="0">Xiaoyan Liu, <b>Jinxiong Cheng</b>, Yingcan Zhao</div>
@@ -124,7 +124,7 @@ My research focuses on developing microfluidic, imaging, and computational platf
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACS nano 2024</div><img src='images/ACS nano.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class="badge">ACS nano 2024</div><div class='paper-box-image'><div><img src='images/ACS nano.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text'>
   <a class="paper-title" href="https://pubs.acs.org/doi/abs/10.1021/acsnano.4c06103" target="_blank" rel="noopener">Coupling Nanoscale Precision with Multiscale Imaging: A Multifunctional Near-Infrared Dye for the Brain</a>
   <div class="paper-authors" tabindex="0">Xiaoyan Liu, Yao Chen, Chen Hang, <b>Jinxiong Cheng</b>, Dinglu Peng, Ying Li, Xingyu Jiang</div>
@@ -133,7 +133,7 @@ My research focuses on developing microfluidic, imaging, and computational platf
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Nano Letters 2022</div><img src='images/Nano Letters.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class="badge">Nano Letters 2022</div><div class='paper-box-image'><div><img src='images/Nano Letters.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text'>
   <a class="paper-title" href="https://pubs.acs.org/doi/abs/10.1021/acs.nanolett.1c04184" target="_blank" rel="noopener">Bioeffects of inhaled nanoplastics on neurons and alteration of animal behaviors through deposition in the brain</a>
   <div class="paper-authors" tabindex="0">Xiaoyan Liu, Yingcan Zhao, Jiabin Dou, Qinghong Hou, <b>Jinxiong Cheng</b>, Xingyu Jiang</div>
@@ -148,7 +148,7 @@ My research focuses on developing microfluidic, imaging, and computational platf
   <li><span class="fact-main"><b>Outstanding Graduate</b> <span class="fact-sub">SUSTech</span></span><span class="fact-date">2023.05</span></li>
   <li><span class="fact-main"><b>Guangdong “Climbing Program”</b> <span class="fact-sub">Special Funds for the Cultivation of College Students’ Scientific and Technological Innovation</span></span><span class="fact-date">2022.10</span></li>
   <li><span class="fact-main"><b>First-class Outstanding Students Scholarship</b> <span class="fact-sub">SUSTech</span></span><span class="fact-date">2021.09</span></li>
-  <li><span class="fact-main"><b>Undergraduate Innovation and Entrepreneurship Training Program</b>, National Level <span class="fact-sub">Team Leader</span></span><span class="fact-date">2021.05</span></li>
+  <li><span class="fact-main"><b>Undergraduate Innovation and Entrepreneurship Training Program</b> <span class="fact-sub">National Level &middot; Team Leader</span></span><span class="fact-date">2021.05</span></li>
 </ul>
 
 # Education
@@ -156,7 +156,7 @@ My research focuses on developing microfluidic, imaging, and computational platf
 <ul class="fact-list">
   <li><span class="fact-main"><b>Ph.D. in Bioengineering</b> <span class="fact-sub">University of Pittsburgh · Pittsburgh, United States</span></span><span class="fact-date">2023.09 – present</span></li>
   <li><span class="fact-main"><b>B.Eng. in Biomedical Engineering</b> <span class="fact-sub">Southern University of Science and Technology · Shenzhen, China</span></span><span class="fact-date">2019.09 – 2023.06</span></li>
-  <li><span class="fact-main"><b>Hefei No.8 High School</b> <span class="fact-sub">Hefei, China</span></span><span class="fact-date">2016.09 – 2019.06</span></li>
+  <li><span class="fact-main"><b>High School Diploma</b> <span class="fact-sub">Hefei No.8 High School &middot; Hefei, China</span></span><span class="fact-date">2016.09 – 2019.06</span></li>
 </ul>
 
 
@@ -170,5 +170,5 @@ My research focuses on developing microfluidic, imaging, and computational platf
 
 <ul class="fact-list">
   <li><span class="fact-main"><b>Journal Reviewer</b> <span class="fact-sub">Biomaterials Research · ACS Omega · Journal of Medical Internet Research (JMIR) · Biotechnology Journal · Biotechnology and Applied Biochemistry · JMIR Public Health and Surveillance</span></span></li>
-  <li><span class="fact-main"><b>Teaching Assistant</b>, BIOENG 1220 Biotransport Phenomena <span class="fact-sub">University of Pittsburgh</span></span><span class="fact-date">2024 &amp; 2025 Fall</span></li>
+  <li><span class="fact-main"><b>Teaching Assistant</b> <span class="fact-sub">BIOENG 1220 Biotransport Phenomena &middot; University of Pittsburgh</span></span><span class="fact-date">2024 &amp; 2025 Fall</span></li>
 </ul>
