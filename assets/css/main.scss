@@ -360,25 +360,52 @@ body {
     }
 
     .paper-box-text {
+        display: flex;
+        flex-direction: column;
+        gap: .4em;
         font-size: 1.02em;
         line-height: 1.65;
 
-        p {
-            margin-bottom: .5em;
+        .paper-title {
+            font-weight: 600;
+            line-height: 1.45;
+        }
 
-            &:last-child {
-                margin-bottom: 0;
+        /* Author lists run long. Clamp to two lines and open on hover or
+           keyboard focus — the element is focusable so this is reachable
+           without a pointer. */
+        .paper-authors {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            overflow: hidden;
+            font-size: .85em;
+            line-height: 1.6;
+            color: var(--text-muted);
+            cursor: default;
+            transition: color .2s ease;
+
+            b {
+                font-weight: 600;
+                color: var(--heading);
+            }
+
+            &:focus-visible {
+                outline: 2px solid var(--primary);
+                outline-offset: 3px;
             }
         }
 
-        a {
-            font-weight: 600;
+        &:hover .paper-authors,
+        .paper-authors:focus,
+        .paper-authors:focus-within {
+            -webkit-line-clamp: 999;
+            line-clamp: 999;
         }
 
         .paper-venue {
-            display: block;
-            margin-top: .1em;
-            font-size: $type-size-6;
+            font-size: .85em;
             color: var(--text-muted);
 
             em {
@@ -514,7 +541,7 @@ body {
 .profile_box {
     position: relative;
     overflow: hidden;
-    padding: 1.75em 1.5em;
+    padding: 1.75em 1.25em;
     background: var(--card-bg);
     border: 1px solid var(--border);
     border-radius: $border-radius;
@@ -679,9 +706,10 @@ body {
     @include breakpoint($large) {
         .author__urls {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;      /* keep the icon row on one line */
             align-items: center;
-            gap: .5em;
+            justify-content: space-between;
+            gap: .3em;
         }
     }
 
@@ -694,8 +722,9 @@ body {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            width: 2.2rem;
-            height: 2.2rem;
+            flex: none;
+            width: 2rem;
+            height: 2rem;
             background: var(--primary-soft);
         }
 
@@ -741,16 +770,16 @@ body {
 /* experience cards (education / research stints) */
 .exp-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: .85em;
     margin: 1.5em 0 2.5em;
 }
 
 .exp-grid .exp-card {
     display: flex;
     flex-direction: column;
-    gap: .9em;
-    padding: 1.3em 1.2em;
+    gap: .75em;
+    padding: 1.15em 1em;
     background: var(--card-bg);
     border: 1px solid var(--border);
     border-radius: $border-radius;
@@ -772,7 +801,7 @@ body {
 .exp-head {
     display: flex;
     align-items: flex-start;
-    gap: .85em;
+    gap: .7em;
 }
 
 .exp-logo {
@@ -780,8 +809,8 @@ body {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    width: 3.4rem;
-    height: 3.4rem;
+    width: 2.9rem;
+    height: 2.9rem;
     padding: .35rem;
     background: #fff;
     border: 1px solid var(--border);
@@ -815,6 +844,10 @@ body {
 }
 
 .exp-school {
+    /* the parent is a column flex container, so without this the anchor
+       stretches the full card width and its hover underline runs past the text */
+    align-self: flex-start;
+    max-width: 100%;
     font-size: $type-size-6;
     font-weight: 500;
     color: var(--primary);

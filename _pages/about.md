@@ -79,93 +79,65 @@ My research focuses on developing microfluidic, imaging, and computational platf
 # Publications
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Cancer Letters 2026</div><img src='images/Cancer Letters 2026.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-  
-[High-throughput drug screening for targeting polyploid cancer cells with an interactive web portal](https://www.sciencedirect.com/science/article/pii/S0304383526000522)
-
-Hsiao-Chun Chen, Li-Ju Wang, Chien-Hung Shih, Huikang Ye, Ying-Ju Lai, **Jinxiong Cheng**, Yuan Zhang, Yushu Ma, Tiffany Habib, Shailrajsinh H Jhala, Hsi-Chun Wang, Yu-Chiao Chiu, Yu-Chih Chen*
-
-<span class="paper-venue"><em>Cancer Letters</em>, 218289 (2026)</span>
-
+<div class='paper-box-text'>
+  <a class="paper-title" href="https://www.sciencedirect.com/science/article/pii/S0304383526000522" target="_blank" rel="noopener">High-throughput drug screening for targeting polyploid cancer cells with an interactive web portal</a>
+  <div class="paper-authors" tabindex="0">Hsiao-Chun Chen, Li-Ju Wang, Chien-Hung Shih, Huikang Ye, Ying-Ju Lai, <b>Jinxiong Cheng</b>, Yuan Zhang, Yushu Ma, Tiffany Habib, Shailrajsinh H Jhala, Hsi-Chun Wang, Yu-Chiao Chiu, Yu-Chih Chen</div>
+  <div class="paper-venue"><em>Cancer Letters</em>, 218289 (2026)</div>
 </div>
 </div>
 
 
 <div class='paper-box' id='pub-lab-on-a-chip'><div class='paper-box-image'><div><div class="badge">Lab on a Chip 2025</div><img src='images/LabChipReview.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-  
-[Transforming microfluidics for single-cell analysis with robotics and artificial intelligence](https://pubs.rsc.org/en/content/articlelanding/2025/lc/d5lc00216h)
-
-**Jinxiong Cheng**, Rajiv Anne, Yu-Chih Chen*
-
-<span class="paper-venue"><em>Lab on a Chip</em>, 25(23), 6100–6125 (2025)</span>
-
+<div class='paper-box-text'>
+  <a class="paper-title" href="https://pubs.rsc.org/en/content/articlelanding/2025/lc/d5lc00216h" target="_blank" rel="noopener">Transforming microfluidics for single-cell analysis with robotics and artificial intelligence</a>
+  <div class="paper-authors" tabindex="0"><b>Jinxiong Cheng</b>, Rajiv Anne, Yu-Chih Chen</div>
+  <div class="paper-venue"><em>Lab on a Chip</em>, 25(23), 6100–6125 (2025)</div>
 </div>
 </div>
 
 
 <div class='paper-box' id='pub-cell-reports-methods'><div class='paper-box-image'><div><div class="badge">Cell Reports Methods 2025</div><img src='images/Plug_GA.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-  
-[3D-printed plugs enhance cell usage efficiency for single-cell migration and neuron axon guidance assays](https://www.cell.com/cell-reports-methods/fulltext/S2667-2375(25)00153-5)
-
-**Jinxiong Cheng**, Edwin C Rock, Mishal Rao, Hsiao-Chun Chen, Yushu Ma, Kun-Che Chang, Yu-Chih Chen*
-
-<span class="paper-venue"><em>Cell Reports Methods</em>, 5(8) (2025)</span>
-
+<div class='paper-box-text'>
+  <a class="paper-title" href="https://www.cell.com/cell-reports-methods/fulltext/S2667-2375(25)00153-5" target="_blank" rel="noopener">3D-printed plugs enhance cell usage efficiency for single-cell migration and neuron axon guidance assays</a>
+  <div class="paper-authors" tabindex="0"><b>Jinxiong Cheng</b>, Edwin C Rock, Mishal Rao, Hsiao-Chun Chen, Yushu Ma, Kun-Che Chang, Yu-Chih Chen</div>
+  <div class="paper-venue"><em>Cell Reports Methods</em>, 5(8) (2025)</div>
 </div>
 </div>
 
 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Analytical Chemistry 2025</div><img src='images/AC.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-  
-[High-Throughput Empirical and Virtual Screening To Discover Novel Inhibitors of Polyploid Giant Cancer Cells in Breast Cancer](https://pubs.acs.org/doi/full/10.1021/acs.analchem.4c05138)
-
-Yushu Ma, Chien-Hung Shih, **Jinxiong Cheng**, Hsiao-Chun Chen, Li-Ju Wang, Yanhao Tan, Yuan Zhang, Daniel D Brown, Steffi Oesterreich, Adrian V Lee, Yu-Chiao Chiu, Yu-Chih Chen*
-
-<span class="paper-venue"><em>Analytical Chemistry</em>, 97, 5498–5506 (2025)</span>
-
+<div class='paper-box-text'>
+  <a class="paper-title" href="https://pubs.acs.org/doi/full/10.1021/acs.analchem.4c05138" target="_blank" rel="noopener">High-Throughput Empirical and Virtual Screening To Discover Novel Inhibitors of Polyploid Giant Cancer Cells in Breast Cancer</a>
+  <div class="paper-authors" tabindex="0">Yushu Ma, Chien-Hung Shih, <b>Jinxiong Cheng</b>, Hsiao-Chun Chen, Li-Ju Wang, Yanhao Tan, Yuan Zhang, Daniel D Brown, Steffi Oesterreich, Adrian V Lee, Yu-Chiao Chiu, Yu-Chih Chen</div>
+  <div class="paper-venue"><em>Analytical Chemistry</em>, 97, 5498–5506 (2025)</div>
 </div>
 </div>
 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Biosensors 2024</div><img src='images/Biosensors.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-  
-[Tumor Microenvironment Based on Extracellular Matrix Hydrogels for On-Chip Drug Screening](https://www.mdpi.com/2079-6374/14/9/429)
-
-Xiaoyan Liu, **Jinxiong Cheng**, Yingcan Zhao
-
-<span class="paper-venue"><em>Biosensors</em>, 14(9), 429 (2024)</span>
-
+<div class='paper-box-text'>
+  <a class="paper-title" href="https://www.mdpi.com/2079-6374/14/9/429" target="_blank" rel="noopener">Tumor Microenvironment Based on Extracellular Matrix Hydrogels for On-Chip Drug Screening</a>
+  <div class="paper-authors" tabindex="0">Xiaoyan Liu, <b>Jinxiong Cheng</b>, Yingcan Zhao</div>
+  <div class="paper-venue"><em>Biosensors</em>, 14(9), 429 (2024)</div>
 </div>
 </div>
 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACS nano 2024</div><img src='images/ACS nano.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-  
-[Coupling Nanoscale Precision with Multiscale Imaging: A Multifunctional Near-Infrared Dye for the Brain](https://pubs.acs.org/doi/abs/10.1021/acsnano.4c06103)
-
-Xiaoyan Liu, Yao Chen, Chen Hang, **Jinxiong Cheng**, Dinglu Peng, Ying Li, Xingyu Jiang*
-
-<span class="paper-venue"><em>ACS Nano</em>, 18(33), 22233–22244 (2024)</span>
-
+<div class='paper-box-text'>
+  <a class="paper-title" href="https://pubs.acs.org/doi/abs/10.1021/acsnano.4c06103" target="_blank" rel="noopener">Coupling Nanoscale Precision with Multiscale Imaging: A Multifunctional Near-Infrared Dye for the Brain</a>
+  <div class="paper-authors" tabindex="0">Xiaoyan Liu, Yao Chen, Chen Hang, <b>Jinxiong Cheng</b>, Dinglu Peng, Ying Li, Xingyu Jiang</div>
+  <div class="paper-venue"><em>ACS Nano</em>, 18(33), 22233–22244 (2024)</div>
 </div>
 </div>
 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Nano Letters 2022</div><img src='images/Nano Letters.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Bioeffects of inhaled nanoplastics on neurons and alteration of animal behaviors through deposition in the brain](https://pubs.acs.org/doi/abs/10.1021/acs.nanolett.1c04184)
-
-Xiaoyan Liu, Yingcan Zhao, Jiabin Dou, Qinghong Hou, **Jinxiong Cheng**, Xingyu Jiang*
-
-<span class="paper-venue"><em>Nano Letters</em>, 22(3), 1091–1099 (2022)</span>
-
+<div class='paper-box-text'>
+  <a class="paper-title" href="https://pubs.acs.org/doi/abs/10.1021/acs.nanolett.1c04184" target="_blank" rel="noopener">Bioeffects of inhaled nanoplastics on neurons and alteration of animal behaviors through deposition in the brain</a>
+  <div class="paper-authors" tabindex="0">Xiaoyan Liu, Yingcan Zhao, Jiabin Dou, Qinghong Hou, <b>Jinxiong Cheng</b>, Xingyu Jiang</div>
+  <div class="paper-venue"><em>Nano Letters</em>, 22(3), 1091–1099 (2022)</div>
 </div>
 </div>
 
@@ -173,7 +145,7 @@ Xiaoyan Liu, Yingcan Zhao, Jiabin Dou, Qinghong Hou, **Jinxiong Cheng**, Xingyu 
 # Honors and Awards
 
 <ul class="fact-list">
-  <li><span class="fact-main"><b>Outstanding Graduate</b>, school level <span class="fact-sub">SUSTech</span></span><span class="fact-date">2023.05</span></li>
+  <li><span class="fact-main"><b>Outstanding Graduate</b> <span class="fact-sub">SUSTech</span></span><span class="fact-date">2023.05</span></li>
   <li><span class="fact-main"><b>Guangdong “Climbing Program”</b> <span class="fact-sub">Special Funds for the Cultivation of College Students’ Scientific and Technological Innovation</span></span><span class="fact-date">2022.10</span></li>
   <li><span class="fact-main"><b>First-class Outstanding Students Scholarship</b> <span class="fact-sub">SUSTech</span></span><span class="fact-date">2021.09</span></li>
   <li><span class="fact-main"><b>Undergraduate Innovation and Entrepreneurship Training Program</b></span><span class="fact-date">2021.05</span></li>
