@@ -372,8 +372,27 @@ body {
         line-height: 1.65;
 
         .paper-title {
+            /* Flex children stretch, so without this the anchor is as wide as
+               the card and its underline runs well past the title. */
+            align-self: flex-start;
+            max-width: 100%;
             font-weight: 600;
             line-height: 1.45;
+
+            /* A background-image underline sits under the whole box, which on a
+               wrapped title draws one full-width line. text-decoration follows
+               the text itself, on every line. */
+            background-image: none;
+            text-decoration: underline;
+            text-decoration-color: transparent;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 3px;
+            transition: text-decoration-color .25s ease, color .2s ease;
+
+            &:hover {
+                background-size: 0 2px;
+                text-decoration-color: var(--accent);
+            }
         }
 
         /* Author lists run long. Clamp to two lines and open on hover or
@@ -864,6 +883,19 @@ body {
     font-size: $type-size-6;
     font-weight: 500;
     color: var(--primary);
+
+    /* underline the words, not the box — these names often wrap to two lines */
+    background-image: none;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+    transition: text-decoration-color .25s ease, color .2s ease;
+
+    &:hover {
+        background-size: 0 2px;
+        text-decoration-color: var(--accent);
+    }
 }
 
 .exp-meta {
