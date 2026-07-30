@@ -82,6 +82,81 @@
     revealTargets.forEach(function (el) { el.classList.add("no-observer"); });
   }
 
+  /* ---------- publication year timeline ----------
+     Built from the papers already on the page, so adding an entry updates the
+     rail without touching this file. */
+  (function buildPublicationTimeline() {
+    var heading = document.getElementById("publications");
+    var papers = document.querySelectorAll(".paper-box[data-year]");
+    if (!heading || papers.length < 2) return;
+
+    var years = [];
+    var counts = {};
+    var firstOfYear = {};
+    Array.prototype.forEach.call(papers, function (box) {
+      var y = box.getAttribute("data-year");
+      if (!counts[y]) {
+        counts[y] = 0;
+        years.push(y);
+        firstOfYear[y] = box;
+      }
+      counts[y]++;
+    });
+    if (years.length < 2) return;
+
+    var rail = document.createElement("nav");
+    rail.className = "pub-rail";
+    rail.setAttribute("aria-label", "Jump to publications by year");
+
+    var line = document.createElement("span");
+    line.className = "pub-rail__line";
+    rail.appendChild(line);
+
+    var items = years.map(function (y) {
+      var btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "pub-rail__year";
+      btn.setAttribute("data-year", y);
+      btn.innerHTML =
+        '<span class="pub-rail__dot"></span>' +
+        '<span class="pub-rail__label">' + y + "</span>" +
+        '<span class="pub-rail__count">' + counts[y] +
+        (counts[y] === 1 ? " paper" : " papers") + "</span>";
+      btn.addEventListener("click", function () {
+        firstOfYear[y].scrollIntoView({
+          behavior: prefersReducedMotion() ? "auto" : "smooth",
+          block: "start"
+        });
+      });
+      rail.appendChild(btn);
+      return { year: y, btn: btn, box: firstOfYear[y] };
+    });
+
+    heading.parentNode.insertBefore(rail, heading.nextSibling);
+
+    /* mark the year currently in view */
+    function markActive() {
+      var top = 0;
+      var active = items[0];
+      for (var i = 0; i < items.length; i++) {
+        var r = items[i].box.getBoundingClientRect();
+        if (r.top - 140 <= 0) active = items[i];
+      }
+      items.forEach(function (it) {
+        it.btn.classList.toggle("is-active", it === active);
+        if (it === active) it.btn.setAttribute("aria-current", "true");
+        else it.btn.removeAttribute("aria-current");
+      });
+      return top;
+    }
+    markActive();
+    window.addEventListener("scroll", markActive, { passive: true });
+  })();
+
+  function prefersReducedMotion() {
+    return window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  }
+
   /* ---------- Google Scholar stats ----------
      The numbers come from the google-scholar-stats branch that this repo's
      crawler workflow publishes. Reveal the block only once they arrive: that

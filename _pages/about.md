@@ -86,7 +86,7 @@ My research focuses on developing microfluidic, imaging, and computational platf
 
 # Publications
 
-<div class='paper-box'><div class="badge">Cancer Letters 2026</div><div class='paper-box-image'><div><img src='images/Cancer Letters 2026.png' alt="sym" width="100%"></div></div>
+<div class='paper-box' data-year='2026'><div class="badge">Cancer Letters 2026</div><div class='paper-box-image'><div><img src='images/Cancer Letters 2026.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text'>
   <a class="paper-title" href="https://www.sciencedirect.com/science/article/pii/S0304383526000522" target="_blank" rel="noopener">High-throughput drug screening for targeting polyploid cancer cells with an interactive web portal</a>
   <div class="paper-authors" tabindex="0">Hsiao-Chun Chen, Li-Ju Wang, Chien-Hung Shih, Huikang Ye, Ying-Ju Lai, <b>Jinxiong Cheng</b>, Yuan Zhang, Yushu Ma, Tiffany Habib, Shailrajsinh H Jhala, Hsi-Chun Wang, Yu-Chiao Chiu, Yu-Chih Chen</div>
@@ -95,7 +95,7 @@ My research focuses on developing microfluidic, imaging, and computational platf
 </div>
 
 
-<div class='paper-box' id='pub-lab-on-a-chip'><div class="badge">Lab on a Chip 2025</div><div class='paper-box-image'><div><img src='images/LabChipReview.png' alt="sym" width="100%"></div></div>
+<div class='paper-box' id='pub-lab-on-a-chip' data-year='2025'><div class="badge">Lab on a Chip 2025</div><div class='paper-box-image'><div><img src='images/LabChipReview.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text'>
   <a class="paper-title" href="https://pubs.rsc.org/en/content/articlelanding/2025/lc/d5lc00216h" target="_blank" rel="noopener">Transforming microfluidics for single-cell analysis with robotics and artificial intelligence</a>
   <div class="paper-authors" tabindex="0"><b>Jinxiong Cheng</b>, Rajiv Anne, Yu-Chih Chen</div>
@@ -104,7 +104,7 @@ My research focuses on developing microfluidic, imaging, and computational platf
 </div>
 
 
-<div class='paper-box' id='pub-cell-reports-methods'><div class="badge">Cell Reports Methods 2025</div><div class='paper-box-image'><div><img src='images/Plug_GA.png' alt="sym" width="100%"></div></div>
+<div class='paper-box' id='pub-cell-reports-methods' data-year='2025'><div class="badge">Cell Reports Methods 2025</div><div class='paper-box-image'><div><img src='images/Plug_GA.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text'>
   <a class="paper-title" href="https://www.cell.com/cell-reports-methods/fulltext/S2667-2375(25)00153-5" target="_blank" rel="noopener">3D-printed plugs enhance cell usage efficiency for single-cell migration and neuron axon guidance assays</a>
   <div class="paper-authors" tabindex="0"><b>Jinxiong Cheng</b>, Edwin C Rock, Mishal Rao, Hsiao-Chun Chen, Yushu Ma, Kun-Che Chang, Yu-Chih Chen</div>
@@ -114,7 +114,7 @@ My research focuses on developing microfluidic, imaging, and computational platf
 
 
 
-<div class='paper-box'><div class="badge">Analytical Chemistry 2025</div><div class='paper-box-image'><div><img src='images/AC.png' alt="sym" width="100%"></div></div>
+<div class='paper-box' data-year='2025'><div class="badge">Analytical Chemistry 2025</div><div class='paper-box-image'><div><img src='images/AC.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text'>
   <a class="paper-title" href="https://pubs.acs.org/doi/full/10.1021/acs.analchem.4c05138" target="_blank" rel="noopener">High-Throughput Empirical and Virtual Screening To Discover Novel Inhibitors of Polyploid Giant Cancer Cells in Breast Cancer</a>
   <div class="paper-authors" tabindex="0">Yushu Ma, Chien-Hung Shih, <b>Jinxiong Cheng</b>, Hsiao-Chun Chen, Li-Ju Wang, Yanhao Tan, Yuan Zhang, Daniel D Brown, Steffi Oesterreich, Adrian V Lee, Yu-Chiao Chiu, Yu-Chih Chen</div>
@@ -123,7 +123,16 @@ My research focuses on developing microfluidic, imaging, and computational platf
 </div>
 
 
-<div class='paper-box'><div class="badge">Biosensors 2024</div><div class='paper-box-image'><div><img src='images/Biosensors.png' alt="sym" width="100%"></div></div>
+<div class='paper-box' data-year='2024'><div class="badge">Lab on a Chip 2024</div><div class='paper-box-image'><div><img src='images/LabChip2024.jpg' alt="Graphical abstract: a convolutional neural network predicting cancer spheroid viability from label-free microfluidic images" width="100%"></div></div>
+<div class='paper-box-text'>
+  <a class="paper-title" href="https://pubs.rsc.org/en/content/articlelanding/2024/lc/d4lc00197d" target="_blank" rel="noopener">Deep learning unlocks label-free viability assessment of cancer spheroids in microfluidics</a>
+  <div class="paper-authors" tabindex="0">Chun-Cheng Chiang, Rajiv Anne, Pooja Chawla, Rachel M Shaw, Sarah He, Edwin C Rock, Mingxin Zhou, <b>Jinxiong Cheng</b>, Yi-Nan Gong, Yu-Chih Chen</div>
+  <div class="paper-venue"><em>Lab on a Chip</em>, 24(12), 3169–3182 (2024)<span class="paper-cites" hidden></span></div>
+</div>
+</div>
+
+
+<div class='paper-box' data-year='2024'><div class="badge">Biosensors 2024</div><div class='paper-box-image'><div><img src='images/Biosensors.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text'>
   <a class="paper-title" href="https://www.mdpi.com/2079-6374/14/9/429" target="_blank" rel="noopener">Tumor Microenvironment Based on Extracellular Matrix Hydrogels for On-Chip Drug Screening</a>
   <div class="paper-authors" tabindex="0">Xiaoyan Liu, <b>Jinxiong Cheng</b>, Yingcan Zhao</div>
@@ -132,7 +141,7 @@ My research focuses on developing microfluidic, imaging, and computational platf
 </div>
 
 
-<div class='paper-box'><div class="badge">ACS Nano 2024</div><div class='paper-box-image'><div><img src='images/ACS nano.png' alt="sym" width="100%"></div></div>
+<div class='paper-box' data-year='2024'><div class="badge">ACS Nano 2024</div><div class='paper-box-image'><div><img src='images/ACS nano.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text'>
   <a class="paper-title" href="https://pubs.acs.org/doi/abs/10.1021/acsnano.4c06103" target="_blank" rel="noopener">Coupling Nanoscale Precision with Multiscale Imaging: A Multifunctional Near-Infrared Dye for the Brain</a>
   <div class="paper-authors" tabindex="0">Xiaoyan Liu, Yao Chen, Chen Hang, <b>Jinxiong Cheng</b>, Dinglu Peng, Ying Li, Xingyu Jiang</div>
@@ -141,7 +150,7 @@ My research focuses on developing microfluidic, imaging, and computational platf
 </div>
 
 
-<div class='paper-box'><div class="badge">Nano Letters 2022</div><div class='paper-box-image'><div><img src='images/Nano Letters.png' alt="sym" width="100%"></div></div>
+<div class='paper-box' data-year='2022'><div class="badge">Nano Letters 2022</div><div class='paper-box-image'><div><img src='images/Nano Letters.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text'>
   <a class="paper-title" href="https://pubs.acs.org/doi/abs/10.1021/acs.nanolett.1c04184" target="_blank" rel="noopener">Bioeffects of inhaled nanoplastics on neurons and alteration of animal behaviors through deposition in the brain</a>
   <div class="paper-authors" tabindex="0">Xiaoyan Liu, Yingcan Zhao, Jiabin Dou, Qinghong Hou, <b>Jinxiong Cheng</b>, Xingyu Jiang</div>
