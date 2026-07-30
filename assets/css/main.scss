@@ -561,7 +561,8 @@ body {
 
     @include breakpoint($large) {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        text-align: center;
     }
 }
 
@@ -602,6 +603,12 @@ body {
 
 @keyframes avatar-spin {
     to { transform: rotate(360deg); }
+}
+
+.author__content {
+    @include breakpoint($large) {
+        text-align: center;
+    }
 }
 
 .author__name {
@@ -677,6 +684,7 @@ body {
 .author__tags {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: .4em;
     margin: 0 0 1.1em;
     padding: 0;
