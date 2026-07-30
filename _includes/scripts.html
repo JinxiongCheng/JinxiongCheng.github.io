@@ -1,5 +1,7 @@
 <script src="assets/js/main.min.js"></script>
-<script src="assets/js/site-interactions.js"></script>
+<!-- ?v= busts the browser cache on rebuild, as the stylesheet link does;
+     without it a visitor keeps running the previously cached script -->
+<script src="assets/js/site-interactions.js?v={{ site.time | date: '%s' }}"></script>
 <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 {% include analytics.html %}
