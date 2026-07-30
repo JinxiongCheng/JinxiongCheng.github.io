@@ -22,7 +22,7 @@ Hi there! I'm **Jinxiong Cheng** 👋 I am currently a third-year Ph.D. student 
 My research focuses on developing microfluidic, imaging, and computational platforms to study cancer cell migration at single-cell resolution and accelerate therapeutic discovery.
 
 <div class="callout">
-  <p><b>I am open to research collaborations and to opportunities beginning in 2028.</b> If our interests overlap &mdash; microfluidics, single-cell analysis, or machine learning for drug discovery &mdash; I would be glad to hear from you.</p>
+  <p><b>I am looking for a summer 2027 internship, and am open to research collaborations.</b> If our interests overlap &mdash; microfluidics, single-cell analysis, or machine learning for drug discovery &mdash; I would be glad to hear from you.</p>
   <p class="callout__actions">
     <a class="btn-cta" href="mailto:jic259@pitt.edu">Email me</a>
     <a class="btn-cta btn-cta--ghost" href="files/CV_Jinxiong_Cheng.pdf" target="_blank" rel="noopener">View CV (PDF)</a>
@@ -90,7 +90,7 @@ My research focuses on developing microfluidic, imaging, and computational platf
 <div class='paper-box-text'>
   <a class="paper-title" href="https://www.sciencedirect.com/science/article/pii/S0304383526000522" target="_blank" rel="noopener">High-throughput drug screening for targeting polyploid cancer cells with an interactive web portal</a>
   <div class="paper-authors" tabindex="0">Hsiao-Chun Chen, Li-Ju Wang, Chien-Hung Shih, Huikang Ye, Ying-Ju Lai, <b>Jinxiong Cheng</b>, Yuan Zhang, Yushu Ma, Tiffany Habib, Shailrajsinh H Jhala, Hsi-Chun Wang, Yu-Chiao Chiu, Yu-Chih Chen</div>
-  <div class="paper-venue"><em>Cancer Letters</em>, 218289 (2026)</div>
+  <div class="paper-venue"><em>Cancer Letters</em>, 218289 (2026)<span class="paper-cites" hidden></span></div>
 </div>
 </div>
 
@@ -99,7 +99,7 @@ My research focuses on developing microfluidic, imaging, and computational platf
 <div class='paper-box-text'>
   <a class="paper-title" href="https://pubs.rsc.org/en/content/articlelanding/2025/lc/d5lc00216h" target="_blank" rel="noopener">Transforming microfluidics for single-cell analysis with robotics and artificial intelligence</a>
   <div class="paper-authors" tabindex="0"><b>Jinxiong Cheng</b>, Rajiv Anne, Yu-Chih Chen</div>
-  <div class="paper-venue"><em>Lab on a Chip</em>, 25(23), 6100–6125 (2025)</div>
+  <div class="paper-venue"><em>Lab on a Chip</em>, 25(23), 6100–6125 (2025)<span class="paper-cites" hidden></span></div>
 </div>
 </div>
 
@@ -108,7 +108,7 @@ My research focuses on developing microfluidic, imaging, and computational platf
 <div class='paper-box-text'>
   <a class="paper-title" href="https://www.cell.com/cell-reports-methods/fulltext/S2667-2375(25)00153-5" target="_blank" rel="noopener">3D-printed plugs enhance cell usage efficiency for single-cell migration and neuron axon guidance assays</a>
   <div class="paper-authors" tabindex="0"><b>Jinxiong Cheng</b>, Edwin C Rock, Mishal Rao, Hsiao-Chun Chen, Yushu Ma, Kun-Che Chang, Yu-Chih Chen</div>
-  <div class="paper-venue"><em>Cell Reports Methods</em>, 5(8) (2025)</div>
+  <div class="paper-venue"><em>Cell Reports Methods</em>, 5(8) (2025)<span class="paper-cites" hidden></span></div>
 </div>
 </div>
 
@@ -118,7 +118,7 @@ My research focuses on developing microfluidic, imaging, and computational platf
 <div class='paper-box-text'>
   <a class="paper-title" href="https://pubs.acs.org/doi/full/10.1021/acs.analchem.4c05138" target="_blank" rel="noopener">High-Throughput Empirical and Virtual Screening To Discover Novel Inhibitors of Polyploid Giant Cancer Cells in Breast Cancer</a>
   <div class="paper-authors" tabindex="0">Yushu Ma, Chien-Hung Shih, <b>Jinxiong Cheng</b>, Hsiao-Chun Chen, Li-Ju Wang, Yanhao Tan, Yuan Zhang, Daniel D Brown, Steffi Oesterreich, Adrian V Lee, Yu-Chiao Chiu, Yu-Chih Chen</div>
-  <div class="paper-venue"><em>Analytical Chemistry</em>, 97, 5498–5506 (2025)</div>
+  <div class="paper-venue"><em>Analytical Chemistry</em>, 97, 5498–5506 (2025)<span class="paper-cites" hidden></span></div>
 </div>
 </div>
 
@@ -127,7 +127,7 @@ My research focuses on developing microfluidic, imaging, and computational platf
 <div class='paper-box-text'>
   <a class="paper-title" href="https://www.mdpi.com/2079-6374/14/9/429" target="_blank" rel="noopener">Tumor Microenvironment Based on Extracellular Matrix Hydrogels for On-Chip Drug Screening</a>
   <div class="paper-authors" tabindex="0">Xiaoyan Liu, <b>Jinxiong Cheng</b>, Yingcan Zhao</div>
-  <div class="paper-venue"><em>Biosensors</em>, 14(9), 429 (2024)</div>
+  <div class="paper-venue"><em>Biosensors</em>, 14(9), 429 (2024)<span class="paper-cites" hidden></span></div>
 </div>
 </div>
 
@@ -136,7 +136,7 @@ My research focuses on developing microfluidic, imaging, and computational platf
 <div class='paper-box-text'>
   <a class="paper-title" href="https://pubs.acs.org/doi/abs/10.1021/acsnano.4c06103" target="_blank" rel="noopener">Coupling Nanoscale Precision with Multiscale Imaging: A Multifunctional Near-Infrared Dye for the Brain</a>
   <div class="paper-authors" tabindex="0">Xiaoyan Liu, Yao Chen, Chen Hang, <b>Jinxiong Cheng</b>, Dinglu Peng, Ying Li, Xingyu Jiang</div>
-  <div class="paper-venue"><em>ACS Nano</em>, 18(33), 22233–22244 (2024)</div>
+  <div class="paper-venue"><em>ACS Nano</em>, 18(33), 22233–22244 (2024)<span class="paper-cites" hidden></span></div>
 </div>
 </div>
 
@@ -145,7 +145,7 @@ My research focuses on developing microfluidic, imaging, and computational platf
 <div class='paper-box-text'>
   <a class="paper-title" href="https://pubs.acs.org/doi/abs/10.1021/acs.nanolett.1c04184" target="_blank" rel="noopener">Bioeffects of inhaled nanoplastics on neurons and alteration of animal behaviors through deposition in the brain</a>
   <div class="paper-authors" tabindex="0">Xiaoyan Liu, Yingcan Zhao, Jiabin Dou, Qinghong Hou, <b>Jinxiong Cheng</b>, Xingyu Jiang</div>
-  <div class="paper-venue"><em>Nano Letters</em>, 22(3), 1091–1099 (2022)</div>
+  <div class="paper-venue"><em>Nano Letters</em>, 22(3), 1091–1099 (2022)<span class="paper-cites" hidden></span></div>
 </div>
 </div>
 

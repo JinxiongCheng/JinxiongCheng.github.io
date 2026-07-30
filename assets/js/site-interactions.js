@@ -87,20 +87,60 @@
      crawler workflow publishes. Reveal the block only once they arrive: that
      branch does not exist until the workflow has run, and a permanent "0"
      reads worse than showing nothing at all. */
+  function normaliseTitle(s) {
+    return String(s)
+      .toLowerCase()
+      .replace(/[‐-―]/g, "-")   // unicode dashes Scholar likes to use
+      .replace(/[^a-z0-9]+/g, " ")
+      .trim();
+  }
+
   var stats = document.getElementById("author-stats");
   if (stats && stats.getAttribute("data-gs-url") && window.fetch) {
     fetch(stats.getAttribute("data-gs-url"))
       .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
       .then(function (data) {
-        if (!data || !data.citedby) return;
-        document.getElementById("total_cit").textContent = data.citedby.toLocaleString();
-        var h = document.getElementById("gs_hindex");
-        if (data.hindex) {
-          h.textContent = data.hindex;
-        } else if (h && h.parentNode) {
-          h.parentNode.remove();
+        if (!data) return;
+
+        if (data.citedby) {
+          document.getElementById("total_cit").textContent = data.citedby.toLocaleString();
+          var h = document.getElementById("gs_hindex");
+          if (data.hindex) {
+            h.textContent = data.hindex;
+          } else if (h && h.parentNode) {
+            h.parentNode.remove();
+          }
+          stats.hidden = false;
         }
-        stats.hidden = false;
+
+        /* Per-paper counts. The crawler keys publications by author_pub_id, but
+           hard-coding those into the page means every new entry needs its id
+           looked up by hand; match on the title instead so a paper added to the
+           page picks up its count on the next crawl. */
+        var pubs = data.publications || {};
+        var byTitle = {};
+        Object.keys(pubs).forEach(function (id) {
+          var p = pubs[id];
+          var title = p && p.bib && p.bib.title;
+          if (title) byTitle[normaliseTitle(title)] = { id: id, cites: p.num_citations || 0 };
+        });
+
+        var scholarBase = "https://scholar.google.com/citations?view_op=view_citation&citation_for_view=";
+        document.querySelectorAll(".paper-box").forEach(function (box) {
+          var titleEl = box.querySelector(".paper-title");
+          var slot = box.querySelector(".paper-cites");
+          if (!titleEl || !slot) return;
+          var hit = byTitle[normaliseTitle(titleEl.textContent)];
+          if (!hit || !hit.cites) return;      // uncited or unmatched: stay hidden
+          var a = document.createElement("a");
+          a.href = scholarBase + encodeURIComponent(hit.id);
+          a.target = "_blank";
+          a.rel = "noopener";
+          a.className = "paper-cites__link";
+          a.textContent = "Cited by " + hit.cites;
+          slot.appendChild(a);
+          slot.hidden = false;
+        });
       })
       .catch(function () { /* nothing published yet — leave it hidden */ });
   }
