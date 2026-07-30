@@ -10,15 +10,21 @@
 
   <div class="author__content">
     <h3 class="author__name">{{ author.name }}</h3>
+    <span class="author__tagline" id="author-tagline" data-rotate="Ph.D. Candidate, Bioengineering|Microfluidics × Cancer Research|University of Pittsburgh"></span>
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>
+
+  {% if author.interests %}
+  <ul class="author__tags">
+    {% for interest in author.interests %}
+      <li>{{ interest }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
 
   <div class="author__urls-wrapper">
     <!-- <button class="btn btn--inverse">More Info & Contact</button> -->
     <ul class="author__urls social-icons">
-      {% if site.description %}
-        <li><div style="white-space: normal; margin-bottom: 1em;">{{ site.description }}</div></li>
-      {% endif %}
       {% if author.location %}
         <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.location }}</li>
       {% endif %}
@@ -214,5 +220,9 @@
         <a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i></a>
       {% endif %}
     </div>
+  </div>
+
+  <div class="visitor-counter">
+    Site visits: <span id="busuanzi_value_site_pv">–</span> · Visitors: <span id="busuanzi_value_site_uv">–</span>
   </div>
 </div>

@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Jinxiong Cheng\n (程进雄)"
+title                    : "Jinxiong Cheng · 程进雄"
 description              : "PhD student at University of Pittsburgh. Microfluidics and Cancer Research "
 repository               : "JinxiongCheng/JinxiongCheng.github.io"
 google_scholar_stats_use_cdn : true
@@ -21,7 +21,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "Jinxiong Cheng (程进雄)"
+  name             : "Jinxiong Cheng"
   avatar           : "images/Jinxiong Lab Photo2.jpg"
   bio              : "University of Pittsburgh"
   location         : "Pittsburgh, United States"
@@ -29,6 +29,7 @@ author:
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=uTVw50sAAAAJ&hl=en"
   email            : "jic259@pitt.edu"
+  interests        : ["Microfluidics", "Nanotechnology", "Single-Cell Analysis", "Deep Learning", "Oncology"]
   researchgate     : "https://www.researchgate.net/profile/Jinxiong-Cheng/"
   uri              :
   bitbucket        :

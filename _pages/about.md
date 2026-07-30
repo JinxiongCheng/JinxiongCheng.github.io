@@ -17,21 +17,68 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am currently a Ph.D. student in the [Department of Bioengineering](https://engineering.pitt.edu/departments/bioengineering/) of the [University of Pittsburgh](https://www.pitt.edu/),  and a member of [Chen Lab](https://www.ycchenlab.org/) under the supervision of [Prof. Yu-Chih Chen](https://www.engineering.pitt.edu/people/faculty/yu-chih-chen/) at [Hillman Cancer Center](https://hillman.upmc.com/).
-In terms of my undergraduate study, I was at the [Department of Biomedical Engineering](https://bme.sustech.edu.cn/en/) , [Southern University of Science and Technology](https://www.sustech.edu.cn/) (南方科技大学生物医学工程系), advised by [Prof. Xingyu Jiang (蒋兴宇)](https://www.sustech.edu.cn/en/faculties/jiangxingyu.html).
+# 👋 About Me
 
-During my senior year, I joined [Prof. Aaron Wheeler](https://bme.utoronto.ca/faculty-research/core-faculty/aaron-wheeler/)’s Lab at the [University of Toronto](https://www.utoronto.ca/), and finished my undergraduate thesis about [digital microfluidics](https://microfluidics.utoronto.ca/). 
+Hi there! I'm **Jinxiong Cheng** 👋 I am currently a third-year Ph.D. student in the [Department of Bioengineering](https://engineering.pitt.edu/departments/bioengineering/) at the [University of Pittsburgh](https://www.pitt.edu/), with an expected graduation of 2028.
 
-My research interest includes microfluidics, nanotechnology, single-cell analysis, deep learning and oncology.
+My research focuses on developing microfluidic, imaging, and computational platforms to study cancer cell migration at single-cell resolution and accelerate therapeutic discovery.
+
+<div class="exp-grid">
+  <div class="exp-card" style="--exp-color:#003594">
+    <div class="exp-head">
+      <a class="exp-logo" href="https://www.pitt.edu/" target="_blank" rel="noopener" aria-label="University of Pittsburgh">
+        <img src="images/logos/pitt.png" alt="University of Pittsburgh crest" loading="lazy">
+      </a>
+      <div class="exp-title">
+        <span class="exp-role">Ph.D. in Bioengineering</span>
+        <a class="exp-school" href="https://www.pitt.edu/" target="_blank" rel="noopener">University of Pittsburgh</a>
+      </div>
+    </div>
+    <div class="exp-meta">
+      <span>🗓 2023 – 2028 (expected)</span>
+      <span>🤝 Advisor: <a href="https://www.engineering.pitt.edu/people/faculty/yu-chih-chen/" target="_blank" rel="noopener">Prof. Yu-Chih Chen</a></span>
+    </div>
+  </div>
+  <div class="exp-card" style="--exp-color:#e8730c">
+    <div class="exp-head">
+      <a class="exp-logo" href="https://www.sustech.edu.cn/en/" target="_blank" rel="noopener" aria-label="Southern University of Science and Technology">
+        <img src="images/logos/sustech.png" alt="SUSTech emblem" loading="lazy">
+      </a>
+      <div class="exp-title">
+        <span class="exp-role">B.Eng. in Biomedical Engineering</span>
+        <a class="exp-school" href="https://www.sustech.edu.cn/en/" target="_blank" rel="noopener">SUSTech</a>
+      </div>
+    </div>
+    <div class="exp-meta">
+      <span>🗓 2019 – 2023</span>
+      <span>🤝 Advisor: <a href="https://www.sustech.edu.cn/en/faculties/jiangxingyu.html" target="_blank" rel="noopener">Prof. Xingyu Jiang</a></span>
+    </div>
+  </div>
+  <div class="exp-card" style="--exp-color:#00204e">
+    <div class="exp-head">
+      <a class="exp-logo" href="https://www.utoronto.ca/" target="_blank" rel="noopener" aria-label="University of Toronto">
+        <img src="images/logos/uoft.png" alt="University of Toronto coat of arms" loading="lazy">
+      </a>
+      <div class="exp-title">
+        <span class="exp-role">Visiting Undergraduate Researcher</span>
+        <a class="exp-school" href="https://www.utoronto.ca/" target="_blank" rel="noopener">University of Toronto</a>
+      </div>
+    </div>
+    <div class="exp-meta">
+      <span>🗓 2022.09 – 2022.12</span>
+      <span>🤝 Mentor: <a href="https://bme.utoronto.ca/faculty-research/core-faculty/aaron-wheeler/" target="_blank" rel="noopener">Prof. Aaron Wheeler</a></span>
+    </div>
+  </div>
+</div>
 
 # 🔥 News
-- *2025.10*: &nbsp;🎉🎉My critical review paper has been accepted  in **Lab on a Chip**!
-- *2025.07*: &nbsp;🎉🎉My first paper has been accepted  in **Cell Reports Methods**!
-- *2023.09*: &nbsp; I started my PhD journey in the Chen Lab at the University of Pittsburgh!
+- *2025.10*: &nbsp;🎉🎉My critical review paper has been accepted in **Lab on a Chip**!
+- *2025.07*: &nbsp;🎉🎉My first paper has been accepted in **Cell Reports Methods**!
+- *2023.09*: &nbsp; I started my Ph.D. journey in the Chen Lab at the University of Pittsburgh!
 - *2022.09*: &nbsp; I joined the Wheeler Lab at the University of Toronto as a visiting undergraduate researcher.
 - *2020.09*: &nbsp; I joined the Jiang Group at SUSTech as an undergraduate researcher.
 
-# 📝 Selected Publications 
+# 📝 Selected Publications
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Cancer Letters 2026</div><img src='images/Cancer Letters 2026.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -117,15 +164,15 @@ Xiaoyan Liu, Yingcan Zhao, Jiabin Dou, Qinghong Hou, **Jinxiong Cheng**, Xingyu 
 - *2021.09* First-class Outstanding Students Scholarship
 - *2021.05* Undergraduate Innovation and Entrepreneurship Training Programs
 
-# 📖 Educations
+# 📖 Education
 - *2023.09 - present*, Doctor of Philosophy, Bioengineering, University of Pittsburgh, Pittsburgh, United States.
-- *2019.09 - 2023.06*, Undergraduate, Southern Univeristy of Science and Technology, Shenzhen, China. 
-- *2016.09 - 2019.06*, Hefei No.8 High School, Hefei, China. 
+- *2019.09 - 2023.06*, Undergraduate, Southern University of Science and Technology, Shenzhen, China.
+- *2016.09 - 2019.06*, Hefei No.8 High School, Hefei, China.
 
 
 # 💻 Internships
 - *2022.09 - 2022.12*, The Wheeler Lab, University of Toronto, Toronto, Canada. Mentor: Prof. Aaron Wheeler
 
 # 💾 Services
-- Journal Reviewer:Biomaterials Research, ACS Omega, Journal of Medical Internet Research(JMIR), Biotechnology Journal, Biotechnology and Applied Biochemistry, JMIR  Public Health and Surveillance
-- Teaching Assistant:BIOENG 1220  BIOTRANSPORT PHENOMENA (2024 Fall & 2025 Fall, University of Pittsburgh)
+- Journal Reviewer: Biomaterials Research, ACS Omega, Journal of Medical Internet Research (JMIR), Biotechnology Journal, Biotechnology and Applied Biochemistry, JMIR Public Health and Surveillance
+- Teaching Assistant: BIOENG 1220 Biotransport Phenomena (2024 Fall & 2025 Fall, University of Pittsburgh)
