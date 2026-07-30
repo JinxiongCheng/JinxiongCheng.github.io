@@ -482,6 +482,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: .5em;
+
+    /* let the nav shrink below its content width so it can scroll internally
+       instead of pushing the page wider than the viewport */
+    > nav {
+        min-width: 0;
+        flex: 1 1 auto;
+    }
 }
 
 .greedy-nav {
@@ -498,30 +506,36 @@ body {
         a { color: var(--text); }
     }
 
-    /* The theme paints the overflow toggle as a solid block the full height of
-       the bar, which reads as a slab sitting on top of the last visible link.
-       Make it a quiet icon button and keep the links clear of it. */
-    button {
-        height: auto;
-        padding: .35rem .5rem;
-        border-radius: 8px;
-        background-color: transparent;
-        color: var(--primary);
+}
 
-        &:hover {
-            background-color: var(--primary-soft);
-        }
+/* Nav scrolls sideways rather than collapsing behind a hamburger. On a desktop
+   the links fit outright, so the scroller is only ever used on narrow screens. */
+.site-nav--scroll {
+    min-width: 0;
+    max-width: 100%;
+
+    /* the theme's 1rem side margins push eight links past the container on a
+       ~1200px screen; this keeps them comfortably inside it */
+    a {
+        margin: 0 .7rem;
     }
 
     .visible-links {
-        padding-right: 2.75rem;
-    }
+        display: flex;
+        align-items: center;
+        overflow-x: auto;
+        overscroll-behavior-x: contain;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;          /* Firefox */
+        -ms-overflow-style: none;       /* old Edge */
 
-    /* the navicon bars are hardcoded #fff for the old solid button */
-    .navicon,
-    .navicon:before,
-    .navicon:after {
-        background: currentColor;
+        &::-webkit-scrollbar { display: none; }
+
+        li {
+            display: block;
+            flex: none;
+            white-space: nowrap;
+        }
     }
 }
 
