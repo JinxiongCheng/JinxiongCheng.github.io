@@ -1,0 +1,200 @@
+% =====================================================================
+%  Jinxiong Cheng -- Curriculum Vitae
+%  Compile with pdfLaTeX (Overleaf: Menu > Compiler > pdfLaTeX)
+%  Only standard packages are used; nothing extra needs installing.
+% =====================================================================
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}                 % Times-like serif, matches the Word original
+\usepackage[
+  top=1.3cm, bottom=1.0cm, left=1.4cm, right=1.4cm
+]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\definecolor{linkblue}{RGB}{0,0,255}
+\hypersetup{
+  colorlinks = true,
+  urlcolor   = linkblue,
+  pdfauthor  = {Jinxiong Cheng},
+  pdftitle   = {Jinxiong Cheng -- Curriculum Vitae}
+}
+\urlstyle{same}
+
+% ---- section headings: bold, with a rule underneath ------------------
+\titleformat{\section}
+  {\normalfont\fontsize{12}{14}\selectfont\bfseries}{}{0em}{}
+  [\vspace{-0.55em}\rule{\textwidth}{0.7pt}]
+\titlespacing*{\section}{0pt}{7pt}{3pt}
+
+% ---- two-column rows: content left, place / date right ---------------
+\newcommand{\rowbb}[2]{\noindent\textbf{#1}\hfill\textbf{#2}\par}   % bold / bold
+\newcommand{\rowni}[2]{\noindent#1\hfill\textit{#2}\par}            % plain / italic
+\newcommand{\rowii}[2]{\noindent\textit{#1}\hfill\textit{#2}\par}   % italic / italic
+
+% ---- bullet list used under every project ----------------------------
+\newlist{points}{itemize}{1}
+\setlist[points]{
+  label=\textbullet, leftmargin=1.3em, labelsep=0.45em,
+  topsep=1.5pt, itemsep=1.2pt, parsep=0pt
+}
+
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+
+\begin{document}
+\fontsize{8.6}{10.4}\selectfont
+
+% =====================================================================
+%  Header
+% =====================================================================
+\begin{center}
+  {\fontsize{18}{22}\selectfont\bfseries Jinxiong Cheng\par}
+  \vspace{2pt}
+  {\fontsize{10}{12}\selectfont
+    \href{mailto:jic259@pitt.edu}{jic259@pitt.edu} \textbar{}
+    \href{https://www.linkedin.com/in/jinxiong-cheng-9409a0245}{LinkedIn} \textbar{}
+    \href{https://scholar.google.com/citations?user=uTVw50sAAAAJ&hl=en}{Google Scholar} \textbar{}
+    Pittsburgh, PA, 15213\par}
+\end{center}
+
+% =====================================================================
+\section*{Education}
+
+\rowbb{University of Pittsburgh}{Pittsburgh, Pennsylvania, United States}
+\rowni{Ph.D. in Bioengineering}{Aug 2023 - Present}
+\vspace{2pt}
+
+\rowbb{Southern University of Science and Technology}{Shenzhen, Guangdong, China}
+\rowni{B.Eng. in Biomedical Engineering}{Sep 2019 - Jun 2023}
+
+% =====================================================================
+\section*{Technical Skills}
+
+\textbf{Microfluidics \& Device Engineering}\par
+Microfluidic chip design, photolithography, soft lithography, SolidWorks,
+COMSOL Multiphysics, 3D printing\par
+\vspace{2pt}
+
+\textbf{Cellular \& Molecular Assays}\par
+High-throughput screening (HTS), single-cell analysis, mammalian cell culture,
+immunofluorescence staining\par
+\vspace{2pt}
+
+\textbf{Computational Analysis}\par
+MATLAB, ImageJ, deep learning, quantitative data visualization
+(OriginLab, GraphPad Prism)\par
+\vspace{2pt}
+
+\textbf{Animal Models}\par
+Tumor model establishment, primary cell isolation, in vivo imaging system (IVIS)\par
+
+% =====================================================================
+\section*{Research Projects}
+
+\rowbb{1. Blocking cancer metastasis by targeting cell migration}{Pittsburgh, Pennsylvania, United States}
+\rowii{Graduate Student Researcher, Chen Lab, University of Pittsburgh}{Aug 2023 - Present}
+\begin{points}
+  \item Designed microfluidic platforms enabling high-throughput screening of
+        \textbf{$\sim$3,000 compounds} at \textbf{single-cell} resolution.
+  \item Quantified migration behavior across \textbf{$>$10,000 single cells} per experiment.
+  \item Integrated \textbf{machine learning} with high-throughput screening to predict
+        drug efficacy, enabling virtual screening of \textbf{$>$6,000 compounds}.
+\end{points}
+\vspace{2.5pt}
+
+\rowbb{2. Suspension cell culture on digital microfluidics platform}{Toronto, Ontario, Canada}
+\rowii{Visiting Research Student, Wheeler Lab, University of Toronto}{Sep 2022 - Dec 2022}
+\begin{points}
+  \item Investigated suspension cell culture on \textbf{digital microfluidic platforms}
+        using CHO cells.
+  \item Optimized droplet manipulation workflows achieving \textbf{$>$90\% cell viability}
+        and high reproducibility across experiments.
+\end{points}
+\vspace{2.5pt}
+
+\rowbb{3. dECM-based tumor-on-chip for drug screening}{Shenzhen, Guangdong, China}
+\rowii{Undergraduate Researcher, Jiang Group, SUSTech}{Feb 2022 - Jun 2023}
+\begin{points}
+  \item Designed a high-throughput microfluidic platform integrating a
+        \textbf{concentration gradient generator} and 3D tumor microenvironment.
+  \item Generated stable linear drug gradients (\textbf{1--10 $\mu$L/min, 7 outlets})
+        with maintained nanoparticle dispersion \textbf{over 7 days}.
+  \item Established \textbf{vascularized co-culture systems}
+        ($\sim$10\textsuperscript{6} cells/mL) for physiologically relevant drug screening.
+\end{points}
+\vspace{2.5pt}
+
+\rowbb{4. Effects of nanoplastics on neuronal systems}{Shenzhen, Guangdong, China}
+\rowii{Undergraduate Researcher, Jiang Group, SUSTech}{Sep 2021 - Jan 2022}
+\begin{points}
+  \item Designed a microfluidic \textbf{gradient chip} for controlled nanoparticle
+        exposure and high-throughput screening.
+  \item Quantified size- and ligand-dependent neuronal uptake of nanoplastics
+        (80--200 nm).
+  \item Demonstrated brain deposition and behavioral alterations \textbf{in vivo}
+        following 7-day exposure.
+\end{points}
+\vspace{2.5pt}
+
+\rowbb{5. Microfluidic system for multiplexed biomarker detection}{Shenzhen, Guangdong, China}
+\rowii{Undergraduate Researcher, Jiang Group, SUSTech}{Mar 2021 - Apr 2022}
+\begin{points}
+  \item Characterized the intrinsic properties of PDMS films and evaluated their
+        effects on the vitamin detection assays.
+  \item Achieved high sensitivity (\textbf{LOD: 6.15 ng/mL}) and high SNR
+        (\textbf{33.49 dB}).
+  \item Enabled multiplexed detection with strong clinical correlation
+        (R\textsuperscript{2} $>$ 0.9) at low cost ($\sim$\$0.04/test).
+\end{points}
+
+% =====================================================================
+\section*{Selected Publications}
+
+\begin{enumerate}[label={[\arabic*]}, leftmargin=*, labelsep=0.45em,
+                  topsep=2pt, itemsep=1.4pt, parsep=0pt]
+
+  \item Chen, H. C., Wang, L. J., Shih, C. H., Ye, H., Lai, Y. J.,
+        \textbf{Cheng, J.}, ... \& Chen, Y. C. (2026). High-Throughput Drug
+        Screening for Targeting Polyploid Cancer Cells with an Interactive Web
+        Portal. \textit{Cancer Letters}, 218289.
+
+  \item \textbf{Cheng, J.}, Anne, R., \& Chen, Y. C. (2025). Transforming
+        microfluidics for single-cell analysis with robotics and artificial
+        intelligence. \textit{Lab on a Chip}, \textit{25}(23), 6100-6125.
+
+  \item \textbf{Cheng, J.}, Rock, E. C., Rao, M., Chen, H. C., Ma, Y.,
+        Chang, K. C., \& Chen, Y. C. (2025). 3D-printed plugs enhance cell usage
+        efficiency for single-cell migration and neuron axon guidance assays.
+        \textit{Cell Reports Methods}, 5(8).
+
+  \item Ma, Y., Shih, C. H., \textbf{Cheng, J.}, Chen, H. C., Wang, L. J.,
+        Tan, Y., ... \& Chen, Y. C. (2025). High-Throughput Empirical and Virtual
+        Screening to Discover Novel Inhibitors of Polyploid Giant Cancer Cells in
+        Breast Cancer. \textit{Analytical Chemistry}, \textit{97}(10), 5498-5506.
+
+  \item Liu, X., \textbf{Cheng, J.}, \& Zhao, Y. (2024). Tumor Microenvironment
+        Based on Extracellular Matrix Hydrogels for On-Chip Drug Screening.
+        \textit{Biosensors}, 14(9), 429.
+
+  \item Chen, H. C., Ma, Y., \textbf{Cheng, J.}, \& Chen, Y. C. (2024). Advances
+        in single-cell techniques for linking phenotypes to genotypes.
+        \textit{Cancer heterogeneity and plasticity}, 1(1), 0004.
+
+  \item Liu, C., \textbf{Cheng, J.}, Liu, Y., Mou, L., Xia, Y., Wang, P., \&
+        Jiang, X. (2024). The nature of PDMS affects the results of the
+        immunoassays carried out in microfluidic channels.
+        \textit{Biomedical Analysis}, \textit{1}(1), 54-63.
+
+  \item Liu, X., Zhao, Y., Dou, J., Hou, Q., \textbf{Cheng, J.}, \& Jiang, X.
+        (2022). Bioeffects of inhaled nanoplastics on neurons and alteration of
+        animal behaviors through deposition in the brain. \textit{Nano Letters},
+        22(3), 1091-1099.
+
+\end{enumerate}
+
+\end{document}
