@@ -9,7 +9,11 @@
 title                    : "Jinxiong Cheng · 程进雄"
 description              : "PhD student at University of Pittsburgh. Microfluidics and Cancer Research "
 repository               : "JinxiongCheng/JinxiongCheng.github.io"
-google_scholar_stats_use_cdn : true
+# false, so the numbers come from raw.githubusercontent (max-age=300) rather
+# than jsDelivr, which tells browsers to keep the file for a week
+# (max-age=604800) and the edge for half a day. Against a weekly crawl that
+# stacked up to visitors seeing a fortnight-old citation count.
+google_scholar_stats_use_cdn : false
 
 # google analytics
 google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
