@@ -1,10 +1,15 @@
 name: Get Citation Data
 
+# Google answers the Actions runner IPs with a flat HTTP 403, so this cannot
+# run on a schedule here -- it just fails every night. The crawl happens on
+# a weekly scheduled task on the local machine instead, from a residential
+# connection: see google_scholar_crawler/update-scholar-stats.ps1, which
+# publishes to the same branch this workflow would.
+#
+# Kept dispatchable so it is one click away if the crawl ever moves back to
+# CI behind a proxy or the SerpApi Scholar endpoint.
 on:
-  # lets the job be started by hand from the Actions tab
   workflow_dispatch:
-  schedule:
-    - cron: '0 8 * * *'
 
 # the job pushes the results to the google-scholar-stats branch, and the
 # default token is read-only on repositories created since 2023

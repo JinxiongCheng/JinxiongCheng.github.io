@@ -18,6 +18,14 @@ from datetime import datetime
 import requests
 from bs4 import BeautifulSoup
 
+# Scholar hands back non-breaking spaces and ellipses in author lists, and a
+# redirected stdout on Windows defaults to the ANSI codepage -- GBK here,
+# which cannot encode either. Printing the dump would then kill the run
+# before a single file was written.
+for stream in (sys.stdout, sys.stderr):
+    if hasattr(stream, 'reconfigure'):
+        stream.reconfigure(encoding='utf-8', errors='replace')
+
 SCHOLAR_ID = os.environ['GOOGLE_SCHOLAR_ID']
 
 # pagesize=100 is the most the profile page will hand over in one go; a
