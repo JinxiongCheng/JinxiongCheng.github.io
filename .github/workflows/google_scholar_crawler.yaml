@@ -3,7 +3,6 @@ name: Get Citation Data
 on:
   # lets the job be started by hand from the Actions tab
   workflow_dispatch:
-  page_build:
   schedule:
     - cron: '0 8 * * *'
 
@@ -12,9 +11,17 @@ on:
 permissions:
   contents: write
 
+# one crawl at a time: a queue of them only makes Google throttle harder
+concurrency:
+  group: google-scholar-stats
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    # the crawl takes seconds; anything longer means Google is stalling us,
+    # and without this the step sat there until the 6h job limit killed it
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
 
@@ -31,6 +38,8 @@ jobs:
         env:
           GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
 
+      # skipped when the fetch fails, which is the point: a throttled run
+      # leaves the previously published numbers alone rather than zeroing them
       - name: Publish to the google-scholar-stats branch
         run: |
           cd ./google_scholar_crawler/results
