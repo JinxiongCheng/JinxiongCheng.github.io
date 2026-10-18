@@ -134,14 +134,32 @@
 
     heading.parentNode.insertBefore(rail, heading.nextSibling);
 
-    /* mark the year currently in view */
+    /* The rail sticks under the masthead (see .pub-rail). Their heights go
+       into CSS variables so the rail sits flush and papers scrolled to land
+       clear of both. */
+    var masthead = document.querySelector(".masthead");
+    var root = document.documentElement;
+    var lastPaper = papers[papers.length - 1];
+    var headH = 0, railH = 0;
+    function measure() {
+      headH = masthead ? masthead.offsetHeight : 0;
+      railH = rail.offsetHeight;
+      root.style.setProperty("--masthead-h", headH + "px");
+      root.style.setProperty("--rail-h", railH + "px");
+    }
+    measure();
+    window.addEventListener("resize", measure);
+
+    /* mark the year currently in view, and hide the rail past the last paper */
     function markActive() {
       var top = 0;
       var active = items[0];
+      var line = headH + railH + 24;
       for (var i = 0; i < items.length; i++) {
         var r = items[i].box.getBoundingClientRect();
-        if (r.top - 140 <= 0) active = items[i];
+        if (r.top - line <= 0) active = items[i];
       }
+      rail.classList.toggle("is-past", lastPaper.getBoundingClientRect().bottom < line);
       items.forEach(function (it) {
         it.btn.classList.toggle("is-active", it === active);
         if (it === active) it.btn.setAttribute("aria-current", "true");

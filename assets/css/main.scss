@@ -175,6 +175,11 @@ html {
     scroll-margin-top: 6.5rem;
 }
 
+/* Papers sit below the year rail as well once it is stuck */
+.paper-box {
+    scroll-margin-top: calc(var(--masthead-h, 54px) + var(--rail-h, 0px) + 1.25rem);
+}
+
 /* briefly flag the paper a News item points at */
 @keyframes paper-flash {
     0%, 100% { box-shadow: var(--shadow); }
@@ -397,21 +402,36 @@ body {
     color: var(--text-muted);
 }
 
-/* publication year rail */
+/* publication year rail. It sticks under the masthead while the papers scroll
+   past, so another year is always one click away, and fades out once the last
+   paper has gone (site-interactions.js sets the heights and .is-past). */
 .pub-rail {
-    position: relative;
+    position: sticky;
+    top: var(--masthead-h, 54px);
+    z-index: 5;
     display: flex;
     justify-content: space-between;
     gap: 1em;
-    margin: 1.6em 0 2em;
-    padding: 0 .25em;
+    margin: 1.2em 0 1.6em;
+    padding: .7em .25em .6em;
+    background: var(--masthead-bg);
+    backdrop-filter: saturate(180%) blur(8px);
+    -webkit-backdrop-filter: saturate(180%) blur(8px);
+    border-radius: 0 0 12px 12px;
+    transition: opacity .2s ease, transform .2s ease;
+
+    &.is-past {
+        opacity: 0;
+        transform: translateY(-6px);
+        pointer-events: none;
+    }
 
     /* the track the markers sit on */
     &__line {
         position: absolute;
         left: .25em;
         right: .25em;
-        top: 6px;
+        top: calc(.7em + 6px);
         height: 2px;
         background: linear-gradient(90deg, var(--primary), var(--accent));
         opacity: .35;
