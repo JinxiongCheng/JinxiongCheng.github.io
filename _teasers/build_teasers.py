@@ -214,8 +214,7 @@ def plug():
         text(360, 246, "8× usage", cls="lbl", anchor="middle", font_size=16, fill="#1f2430"),
         t="pop@.66-.74",
     ))
-    out.append(caption(("funnel cells", "f-blue"), (" to the assay: ", "f-ink"),
-                       ("8× cell usage", "f-gold-ink")))
+    out.append(caption(("3D-printed plug", "key"), (" funnels cells in: ", "f-ink"), ("8× cell usage", "key")))
     return svg("plug", "Animation: in a standard well only 2 of 16 loaded cells settle on the "
                "assay region; a 3D-printed plug with a tapered bore funnels all of them there, "
                "an 8-fold gain in cell usage efficiency", out)
@@ -295,8 +294,7 @@ def pgcc_portal():
              font_size=12, fill="var(--t-panel)"),
         t="rise@.77-.82",
     ))
-    out.append(caption(("screen", "f-blue"), (" every drug, ", "f-ink"),
-                       ("share", "f-gold-ink"), (" every result", "f-ink")))
+    out.append(caption(("2,726 drugs", "key"), (" screened on PGCCs, ", "f-ink"), ("shared online", "key")))
     return svg("pgcc-portal", "Animation: 2,726 compounds screened across six breast, pancreatic "
                "and prostate cancer cell lines fill a heatmap of non-PGCC and PGCC responses "
                "in the PGCC Explorer web portal", out)
@@ -391,8 +389,7 @@ def pgcc_screen():
     out.append(text(qx + 186, 216, "5", cls="big f-live", anchor="middle", font_size=22, t="rise@.84-.88"))
     out.append(text(qx + 186, 234, "validated", cls="lbl f-live", anchor="middle", font_size=12, t="rise@.85-.89"))
 
-    out.append(caption(("screen", "f-blue"), (" in the lab, ", "f-ink"),
-                       ("rank", "f-gold-ink"), (" in silico", "f-ink")))
+    out.append(caption(("screen", "key"), (" in the lab, ", "f-ink"), ("rank 6,000+", "key"), (" in silico, ", "f-ink"), ("validate 5", "key")))
     return svg("pgcc-screen", "Animation: single-cell morphology shows a standard drug clearing "
                "small cancer cells while polyploid giant cancer cells persist, then an anti-PGCC "
                "hit clearing both; a model trained on chemical fingerprints ranks over 6,000 "
@@ -469,7 +466,7 @@ def robot_ai():
         text(240, 57, "shared cloud lab", cls="lbl f-blue", anchor="middle", font_size=12),
         t="rise@.84-.9",
     ))
-    out.append(caption(("robots", "f-blue"), (" run it, ", "f-ink"), ("AI", "f-gold-ink"), (" reads it", "f-ink")))
+    out.append(caption(("robots", "key"), (" run the chip, ", "f-ink"), ("AI", "key"), (" reads it, ", "f-ink"), ("cloud labs", "key"), (" share it", "f-ink")))
     return svg("robot-ai", "Animation: around a microfluidic chip, a loop links robotic "
                "operation, single-cell imaging, deep learning and hypothesis generation, "
                "converging on a shared cloud lab", out)
@@ -549,7 +546,7 @@ def spheroid():
     out.append(g(rect(16, 212, 172, 28, 14, cls="f-live-soft"),
                  text(102, 231, "✓ matches LIVE/DEAD", cls="lbl f-live", anchor="middle", font_size=12),
                  t="pop@.8-.86"))
-    out.append(caption(("viability", "f-blue"), (" from phase contrast, ", "f-ink"), ("no stain", "f-gold-ink")))
+    out.append(caption(("no-stain viability", "key"), (" from phase contrast, ", "f-ink"), ("over time", "key")))
     return svg("spheroid", "Animation: a microfluidic chip holding about 12,000 spheroids; one "
                "spheroid's phase-contrast image shrinks and frays under drug, a convolutional "
                "network reads its viability without staining, tracked over time and matching "
@@ -626,7 +623,7 @@ def cgg():
         rect(403, 225, 10, 9, 2, cls="f-gold", opacity=".25"), text(415, 233, "dECM gel", cls="lbl", font_size=11),
         t="fade@.7-.76",
     ))
-    out.append(caption(("one chip", "f-blue"), (", a full ", "f-ink"), ("dose gradient", "f-gold-ink")))
+    out.append(caption(("one chip", "key"), (", a full ", "f-ink"), ("dose gradient", "key"), (" on 3D tumor niches", "f-ink")))
     return svg("cgg", "Animation: a concentration gradient generator splits drug and medium "
                "into five graded doses, each feeding a 3D chamber of neuroblastoma (SY5Y) cells "
                "and brain microvascular endothelial cells in decellularized ECM hydrogel", out)
@@ -765,7 +762,7 @@ def nir_dye():
                              stroke_width=1, opacity=".5"))
         tile.append(text(452, ty + 20, name, cls="lbl", anchor="end", font_size=12))
         out.append(g(*tile, t=f"slide@{st:.2f}-{st + .07:.2f}", dx=24))
-    out.append(caption(("stain in < 1 min", "f-nir"), (", image ", "f-ink"), ("vesicle → brain", "f-blue")))
+    out.append(caption(("stain in < 1 min", "key"), (", image in NIR from ", "f-ink"), ("vesicle to brain", "key")))
     return svg("nir-dye", "Animation: near-infrared dye molecules land on a neuron's membrane and "
                "light it up in under a minute, with emission above 700 nm, then the same dye "
                "images vesicles, a single neuron and a whole brain", out)
@@ -846,7 +843,7 @@ def nanoplastic():
         out.append(g(rect(px, y, 188, 26, 13, cls="f-dead-soft"),
                      text(px + 94, y + 17, s_, cls="lbl f-dead", anchor="middle", font_size=13),
                      t=f"rise@{st:.2f}-{st + .05:.2f}"))
-    out.append(caption(("inhaled", "f-ink"), (" nanoplastics", "f-gold-ink"), (" reach the brain", "f-blue")))
+    out.append(caption(("inhaled nanoplastics", "key"), (" reach brain; ", "f-ink"), ("mice move less", "key")))
     return svg("nanoplastic", "Animation: 80 nm polystyrene nanoplastics inhaled through a "
                "mouse's nose deposit in its brain; on a microfluidic chip smaller particles are "
                "taken up more by neurons; exposed mice are less active and show inhibited AChE "
