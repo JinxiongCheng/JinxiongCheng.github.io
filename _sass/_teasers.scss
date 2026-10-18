@@ -1,0 +1,132 @@
+/* Animated publication teasers (markup from _teasers/build_teasers.py, motion
+   from assets/js/teasers.js). Everything is drawn from the tokens below, so
+   the figures follow the light / dark toggle with no second asset. */
+
+.teaser-anim {
+    --t-panel: #f5f7fb;
+    --t-card: #ffffff;
+    --t-ink: #1f2430;
+    --t-muted: #6b7280;
+    --t-faint: #c9cfd9;
+    --t-line: #dfe3ea;
+    --t-blue: #003594;
+    --t-blue-soft: rgba(0, 53, 148, 0.10);
+    --t-gold: #ffb81c;
+    --t-gold-ink: #a86f00;      /* gold dark enough to read as text on white */
+    --t-gold-soft: rgba(255, 184, 28, 0.22);
+    --t-live: #2f9e6b;
+    --t-live-soft: rgba(47, 158, 107, 0.16);
+    --t-dead: #d0514a;
+    --t-dead-soft: rgba(208, 81, 74, 0.14);
+    --t-nir: #c2185b;
+    --t-nir-soft: rgba(194, 24, 91, 0.16);
+    --t-cell: #e7ecf5;
+
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    font-family: $sans-serif;
+    border-radius: calc(#{$border-radius} - 2px);
+    overflow: hidden;
+
+    text { font-family: $sans-serif; }
+    [data-t] { transform-box: fill-box; transform-origin: center; }
+}
+
+[data-theme="dark"] .teaser-anim {
+    --t-panel: #141924;
+    --t-card: #1e2431;
+    --t-ink: #e6e9ef;
+    --t-muted: #9aa1ac;
+    --t-faint: #48505f;
+    --t-line: #2f3646;
+    --t-blue: #8fb3f0;
+    --t-blue-soft: rgba(143, 179, 240, 0.16);
+    --t-gold: #ffc94d;
+    --t-gold-ink: #ffc94d;
+    --t-gold-soft: rgba(255, 201, 77, 0.18);
+    --t-live: #5cc995;
+    --t-live-soft: rgba(92, 201, 149, 0.18);
+    --t-dead: #f07b72;
+    --t-dead-soft: rgba(240, 123, 114, 0.18);
+    --t-nir: #ff6fa5;
+    --t-nir-soft: rgba(255, 111, 165, 0.20);
+    --t-cell: #2a3242;
+}
+
+/* Paint classes used by the generated SVG. Text roles come first so a
+   colour class on the same element wins. */
+.teaser-anim {
+    .lbl  { font-size: 16px; font-weight: 600; fill: var(--t-muted); letter-spacing: .02em; }
+    .cap  { font-size: 23px; font-weight: 700; fill: var(--t-ink); letter-spacing: -.01em; }
+    .big  { font-size: 26px; font-weight: 800; letter-spacing: -.02em; }
+    .tag  { font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; fill: var(--t-muted); }
+
+    .f-panel { fill: var(--t-panel); }
+    .f-card  { fill: var(--t-card); stroke: var(--t-line); stroke-width: 1.2; }
+    .f-ink   { fill: var(--t-ink); }
+    .f-muted { fill: var(--t-muted); }
+    .f-faint { fill: var(--t-faint); }
+    .f-line  { fill: var(--t-line); }
+    .f-blue  { fill: var(--t-blue); }
+    .f-blue-soft { fill: var(--t-blue-soft); }
+    .f-gold  { fill: var(--t-gold); }
+    .f-gold-ink { fill: var(--t-gold-ink); }
+    .f-gold-soft { fill: var(--t-gold-soft); }
+    .f-live  { fill: var(--t-live); }
+    .f-live-soft { fill: var(--t-live-soft); }
+    .f-dead  { fill: var(--t-dead); }
+    .f-dead-soft { fill: var(--t-dead-soft); }
+    .f-nir   { fill: var(--t-nir); }
+    .f-nir-soft { fill: var(--t-nir-soft); }
+    .f-cell  { fill: var(--t-cell); }
+    .f-none  { fill: none; }
+
+    .s-ink   { stroke: var(--t-ink); }
+    .s-muted { stroke: var(--t-muted); }
+    .s-faint { stroke: var(--t-faint); }
+    .s-line  { stroke: var(--t-line); }
+    .s-blue  { stroke: var(--t-blue); }
+    .s-gold  { stroke: var(--t-gold); }
+    .s-live  { stroke: var(--t-live); }
+    .s-dead  { stroke: var(--t-dead); }
+    .s-nir   { stroke: var(--t-nir); }
+
+}
+
+/* Hide steps that end the loop off-stage when there is no JS to run them */
+.teaser-anim:not(.t-ready) .t-gone { opacity: 0; }
+
+/* In the publication card the teaser takes the figure's place */
+.paper-box .paper-box-image .teaser-link {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    cursor: zoom-in;
+    border-radius: calc(#{$border-radius} - 2px);
+    box-shadow: 0 0 0 1px var(--border);
+    transition: transform .4s ease;
+
+    @include breakpoint($medium) {
+        width: 336px;
+        max-width: 100%;
+    }
+}
+
+/* The teasers carry labels, so give them a little more of the card than the
+   static figures had (40/60 before) */
+@include breakpoint($medium) {
+    .paper-box .paper-box-image {
+        height: auto;
+        max-width: 45%;
+    }
+
+    .paper-box .paper-box-text {
+        max-width: 55%;
+    }
+}
+
+.paper-box:hover .paper-box-image .teaser-link {
+    transform: scale(1.03);
+}
