@@ -200,8 +200,6 @@
     seek: function (frac) { states.forEach(function (s) { s.running = false; seek(s, frac); }); }
   };
 
-  if (reduce || !("IntersectionObserver" in window)) return;
-
   function play(s) {
     if (s.running) return;
     s.running = true;
@@ -222,6 +220,54 @@
     seek(s, num(s.svg, "poster", 0.9));
   }
 
+  // Clicking a teaser opens a larger copy of the same animation, playing from
+  // the top.
+  function openZoom(src, opener) {
+    var overlay = document.createElement("div");
+    overlay.className = "teaser-zoom";
+    overlay.setAttribute("role", "dialog");
+    overlay.setAttribute("aria-modal", "true");
+    overlay.setAttribute("aria-label", "Enlarged animation");
+    var box = document.createElement("div");
+    box.className = "teaser-zoom__box";
+    var close = document.createElement("button");
+    close.type = "button";
+    close.className = "teaser-zoom__close";
+    close.setAttribute("aria-label", "Close");
+    close.textContent = "×";
+    var clone = src.cloneNode(true);
+    clone.classList.remove("t-ready");
+    box.appendChild(close);
+    box.appendChild(clone);
+    overlay.appendChild(box);
+    document.body.appendChild(overlay);
+    document.documentElement.classList.add("teaser-zoom-open");
+
+    var z = setup(clone);
+    if (!reduce) play(z);
+
+    function shut() {
+      z.running = false;
+      z.anims.forEach(function (a) { a.cancel(); });
+      overlay.remove();
+      document.documentElement.classList.remove("teaser-zoom-open");
+      document.removeEventListener("keydown", onKey);
+      if (opener) opener.focus();
+    }
+    function onKey(e) { if (e.key === "Escape") shut(); }
+    overlay.addEventListener("click", function (e) { if (e.target === overlay || e.target === close) shut(); });
+    document.addEventListener("keydown", onKey);
+    close.focus();
+  }
+
+  states.forEach(function (s) {
+    var host = s.svg.closest(".teaser-link");
+    if (!host) return;
+    host.addEventListener("click", function () { openZoom(s.svg, host); });
+  });
+
+  if (reduce || !("IntersectionObserver" in window)) return;
+
   // Hovering or focusing a teaser freezes it on the current frame, so it can
   // be read (and so looping motion can always be paused); leaving resumes.
   function hold(s) {
@@ -237,7 +283,7 @@
   }
 
   states.forEach(function (s) {
-    var host = s.svg.closest("a") || s.svg;
+    var host = s.svg.closest(".teaser-link") || s.svg;
     host.addEventListener("mouseenter", function () { hold(s); });
     host.addEventListener("mouseleave", function () { resume(s); });
     host.addEventListener("focusin", function () { hold(s); });

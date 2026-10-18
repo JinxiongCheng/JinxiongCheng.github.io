@@ -98,9 +98,11 @@
     top: .85rem;
     left: .85rem;
     z-index: 2;
-    padding: .32em .85em;
-    color: #fff;
-    background: linear-gradient(135deg, $primary-color 0%, mix($primary-color, $accent-color, 35%) 55%, $accent-color 100%);
+    padding: .28em .8em;
+    /* a quiet label: the teaser and the title are what should catch the eye */
+    color: var(--text-muted);
+    background: var(--primary-soft);
+    border: 1px solid var(--border);
     font-family: $sans-serif;
     font-size: .7em;
     font-weight: 700;
@@ -108,9 +110,6 @@
     line-height: 1.5;
     white-space: nowrap;
     border-radius: 999px;
-    box-shadow:
-        0 2px 10px rgba(0, 53, 148, 0.32),
-        inset 0 1px 0 rgba(255, 255, 255, 0.28);
 }
 
 /* ==========================================================================
@@ -611,6 +610,7 @@ body {
             em {
                 color: var(--primary);
                 font-style: italic;
+                font-weight: 700;
             }
         }
 
