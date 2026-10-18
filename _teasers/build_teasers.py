@@ -95,8 +95,13 @@ def r(v):
 
 
 def caption(*parts, t="fade@.04-.1"):
-    """Bottom line in the style of a slide title: (text, class) pairs."""
-    inner = "".join(tspan(s, c) for s, c in parts)
+    """Bottom line in the style of a slide title: (text, class) pairs.
+
+    Kept quiet so it does not compete with the paper title beside it: the
+    keywords (any part not marked f-ink) are set darker and bolder than the
+    rest, with no accent colour.
+    """
+    inner = "".join(tspan(s, "cap-rest" if c == "f-ink" else "cap-key") for s, c in parts)
     return tag("text", inner, x=24, y=279, cls="cap", t=t)
 
 
@@ -305,7 +310,7 @@ def pgcc_screen():
     out = []
     px, py, pw, ph = 18, 26, 214, 222
     out.append(rect(px, py, pw, ph, 9, cls="f-card"))
-    out.append(text(px + 14, py + 22, "single-cell morphology", cls="tag", font_size=11))
+    out.append(text(px + pw / 2, py + 22, "single-cell morphology", cls="tag", anchor="middle", font_size=11))
 
     def ghost(x, y, rad, t):
         return circle(x, y, rad, cls="f-none s-faint", stroke_width=1.2, stroke_dasharray="2.5 2.5", t=t)
@@ -324,10 +329,10 @@ def pgcc_screen():
         st = f["die"][0] - .08
         out.append(rect(px + 10, y0, pw - 20, 88, 8, cls="f-panel", t=f"fade@{st:.2f}-{st + .04:.2f}"))
         out.append(text(px + 20, y0 + 18, f["name"], cls=f["cls"], font_size=11, t=f"fade@{st:.2f}-{st + .04:.2f}"))
-        gy = y0 + 46
+        gy = y0 + 42
         small = []
         while len(small) < 7:
-            x, y = rnd.uniform(px + 26, gx - 30), rnd.uniform(y0 + 32, y0 + 78)
+            x, y = rnd.uniform(px + 26, gx - 54), rnd.uniform(y0 + 32, y0 + 76)
             if all(math.dist((x, y), q) > 17 for q in small):
                 small.append((x, y))
         d0, d1 = f["die"]
@@ -344,7 +349,7 @@ def pgcc_screen():
                               t=f"pop@{f['verdict'][2]:.2f}-{f['verdict'][2] + .05:.2f}"))
         out.append(live)
         word, wcls, wt = f["verdict"]
-        out.append(text(gx, y0 + 82, word, cls="lbl " + wcls, anchor="middle", font_size=12,
+        out.append(text(gx, y0 + 77, word, cls="lbl " + wcls, anchor="middle", font_size=12,
                         t=f"rise@{wt:.2f}-{wt + .05:.2f}"))
 
     # in silico side
@@ -355,14 +360,16 @@ def pgcc_screen():
         out.append(rect(qx + i * 17, 50, 14, 14, 2.5, cls="f-blue" if b else "f-line",
                         t=f"pop@{stagger(i, 12, .58, .66, .03)}"))
     # small network
-    layers = [[qx + 30 + i * 30 for i in range(5)], [qx + 45 + i * 30 for i in range(4)], [qx + 90, qx + 120]]
+    # every layer centred under the fingerprint row
+    mid = qx + (12 * 17 - 3) / 2
+    layers = [[mid + (i - (n - 1) / 2) * 30 for i in range(n)] for n in (5, 4, 2)]
     ys = [86, 108, 128]
     for li in range(2):
         for a in layers[li]:
             for b in layers[li + 1]:
                 y0, y1 = ys[li], ys[li + 1]
                 h = (y1 - y0) / 2
-                out.append(path(f"M{a} {y0}C{a} {y0 + h} {b} {y1 - h} {b} {y1}", cls="f-none s-line",
+                out.append(path(f"M{a:.1f} {y0}C{a:.1f} {y0 + h} {b:.1f} {y1 - h} {b:.1f} {y1}", cls="f-none s-line",
                                 stroke_width=1, t="fade@.64-.68"))
     for li, xs_ in enumerate(layers):
         for x in xs_:
@@ -381,8 +388,8 @@ def pgcc_screen():
                      path(f"M{cx_ - 2.4:.1f} {y + 3.6:.1f}l1.7 1.7l3.2 -3.4", cls="f-none", stroke="#fff",
                           stroke_width=1.5, stroke_linecap="round", stroke_linejoin="round"),
                      t=f"pop@{stagger(i, 5, .8, .86, .025)}"))
-    out.append(text(qx + 190, 218, "5", cls="big f-live", anchor="end", font_size=22, t="rise@.84-.88"))
-    out.append(text(qx + 190, 236, "validated", cls="lbl f-live", anchor="end", font_size=12, t="rise@.85-.89"))
+    out.append(text(qx + 186, 216, "5", cls="big f-live", anchor="middle", font_size=22, t="rise@.84-.88"))
+    out.append(text(qx + 186, 234, "validated", cls="lbl f-live", anchor="middle", font_size=12, t="rise@.85-.89"))
 
     out.append(caption(("screen", "f-blue"), (" in the lab, ", "f-ink"),
                        ("rank", "f-gold-ink"), (" in silico", "f-ink")))
@@ -772,17 +779,19 @@ def nanoplastic():
     out = []
     # the head fades out towards the neck instead of ending on a hard edge
     out.append(tag("defs", [
-        tag("linearGradient", [tag("stop", offset="0", stop_color="#fff"), tag("stop", offset=".72", stop_color="#fff"),
+        tag("linearGradient", [tag("stop", offset="0", stop_color="#fff"), tag("stop", offset=".8", stop_color="#fff"),
                                tag("stop", offset="1", stop_color="#fff", stop_opacity="0")],
             id="t-np-fade", x1="0", y1="0", x2="0", y2="1"),
-        tag("mask", rect(0, 80, 270, 170, fill="url(#t-np-fade)"), id="t-np-mask"),
+        tag("mask", rect(0, 0, 270, 250, fill="url(#t-np-fade)"), id="t-np-mask"),
     ]))
     head = ("M50 154C52 142 64 128 84 118C112 104 150 98 184 102C222 106 248 128 254 160"
             "C258 186 256 212 252 240L150 240C120 222 92 200 72 182C58 170 49 164 50 154Z")
     out.append(g(
-        tag("ellipse", cx=200, cy=98, rx=21, ry=27, cls="f-card"),
-        tag("ellipse", cx=200, cy=100, rx=11, ry=16, cls="f-dead-soft"),
         path(head, cls="f-card"),
+        # the ear sits in front of the head, overlapping its crown
+        g(tag("ellipse", cx=0, cy=0, rx=19, ry=24, cls="f-card"),
+          tag("ellipse", cx=0, cy=2, rx=11, ry=15, cls="f-dead-soft"),
+          transform="translate(196 90) rotate(14)"),
         path("M100 118C108 112 118 110 126 112", cls="f-none s-line", stroke_width=1.5, stroke_linecap="round"),
         mask="url(#t-np-mask)", t="fade@.02-.08",
     ))
